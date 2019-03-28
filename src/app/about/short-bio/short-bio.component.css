@@ -1,0 +1,12 @@
+h3 {
+	/*font-family: 'Aladin', cursive;*/
+			font-family: 'Quicksand',  sans-serif;
+			padding-bottom: 30px;
+}
+
+.description, #skills {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 20px;
+}
+
+

@@ -1,0 +1,15 @@
+<a [routerLink]="[index]" class="item-short">
+  <div class="jumbotron p-0 animated slideInUp wow">
+    <div class="view overlay rounded-top waves-light images" mdbWavesEffect >
+      <img [src]="project.picHome" class="img-fluid" alt="Sample image" style="height: 500">
+      <div class="mask flex-center text-center rgba-blue-strong middle">
+        <div class="overlay-text">
+          <h2 class="title">{{ project.name }}</h2>
+          <h5 class="title">{{ project.subTitle }}</h5>
+          <p class="title">Technology: {{ project.techUsed }}</p>
+          <a class="btn btn-danger btn-sm mt-lg-5 mt-md-4 mt-sm-3" mdbWavesEffect > <mdb-icon fas icon="clone" class="left"></mdb-icon> View work</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</a>

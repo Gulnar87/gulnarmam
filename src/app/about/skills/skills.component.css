@@ -1,0 +1,22 @@
+.list-inline-item {
+	padding: 5px;
+}
+
+h3 {
+	 font-family: 'Quicksand', sans-serif;
+}
+
+.list-group {
+	 font-family: 'Quicksand', sans-serif;
+    font-size: 25px;
+}
+
+.col-settings {
+  position: relative;
+}
+
+.img-settings {
+  position: absolute;
+  top: 50px;
+  right: 5%
+}

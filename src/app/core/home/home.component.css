@@ -1,0 +1,31 @@
+
+
+
+/*
+.social-icon{
+
+  box-shadow: none;
+}
+
+.social-icon:hover {
+   color: #c40909;
+
+}*/
+
+
+.middle {
+  transition: .9s ease;
+
+  -webkit-transform:scale(0);
+}
+
+.images:hover .middle {
+  transform: scale(1);
+  
+}
+
+
+
+
+
+

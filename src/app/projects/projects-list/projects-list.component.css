@@ -1,0 +1,238 @@
+#profile-pic {
+  position:relative;
+  margin:0 auto;
+
+}
+
+#profile-pic img {
+  position:absolute;
+  left:0;
+}
+
+.row-photo {
+	margin-left: 50px;
+   margin-bottom: 200px;
+
+
+}
+
+#hello, #name, #profession{
+	font-family: 'Aladin', cursive;
+}
+
+
+.overview {
+    color: #1c95ce ;
+	font-family: 'Quicksand',  sans-serif;
+	font-style: 700;
+}
+
+#hello {
+	color: #1c95ce; 
+	font-size: 180px
+}
+
+#name{
+	font-size: 50px;
+}
+
+#profession {
+	font-size: 40px;
+
+}
+
+.social-icon{
+
+  box-shadow: none;
+}
+
+#social-icons a:hover {
+   color: #c40909;
+   box-shadow: none;
+}
+
+
+/********** Extra Large devices only **********/
+@media (min-width: 1200px) {
+
+
+}
+
+
+/********** Large devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+
+#hello {
+
+	font-size: 155px
+}
+
+#name{
+	font-size: 45px;
+}
+
+#profession {
+	font-size: 35px;
+
+}
+
+.row-photo {
+    margin-bottom: 150px;
+}
+
+
+}
+     
+/********** Medium devices only **********/
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+#hello {
+	font-size: 110px
+}
+
+#name{
+	font-size: 35px;
+}
+
+#profession {
+	font-size: 25px;
+
+}
+
+
+.row-photo {
+    margin-bottom: 110px;
+}
+
+
+
+}
+
+
+/********** Small devices only **********/
+@media (min-width: 576px) and (max-width: 767px) {
+
+#hello {
+	font-size: 80px
+}
+
+#name{
+	font-size: 30px;
+}
+
+#profession {
+	font-size: 20px;
+
+}
+
+.row-photo {
+	margin-left: 20px;
+    margin-bottom: 130px;
+
+}
+
+
+}
+
+
+/********** Extra Small Devices Only **********/
+@media (min-width: 480px) and  (max-width: 575px) {
+
+
+#hello {
+	font-size: 50px; 
+}
+
+#name{
+	font-size: 25px;
+}
+
+#profession {
+	font-size: 20px;
+
+}
+
+.row-photo {
+	margin-left: 20px;
+    margin-bottom: 80px;
+
+}
+
+.col-home {
+	padding-top: 30px;
+}
+
+
+}
+
+
+/********** Super extra small devices Only :-)  **********/
+@media (min-width: 380px) and (max-width: 479px) {
+
+#hello {
+	font-size: 40px; 
+}
+
+#name{
+	font-size: 20px;
+}
+
+#profession {
+	font-size: 20px;
+
+}
+
+
+.social-icon{
+	padding-left: 2px;
+}
+
+
+.row-photo {
+	margin-left: 20px;
+    margin-bottom: 60px;
+
+}
+
+.overview {
+    font-size: 25px;
+}
+
+
+}
+
+/********** iphone 5  **********/
+@media (min-width: 320px) and (max-width: 379px) {
+
+#hello {
+	font-size: 25px; 
+}
+
+#name{
+	font-size: 18px;
+}
+
+#profession {
+	font-size: 16px;
+
+}
+
+.row-photo {
+	margin-left: 15px;
+    margin-bottom: 30px;
+
+
+}
+
+.social-icon{
+	margin-left: 0;
+	padding-left: 2px;
+}
+
+
+.overview {
+    font-size: 20px;
+}
+
+}

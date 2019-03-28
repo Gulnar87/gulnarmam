@@ -1,0 +1,111 @@
+.navbar-nav .nav-link {
+	color: #c40909 !important;
+	font-family: 'Quicksand', sans-serif, !important;
+	font-size: 20px;
+ /*padding-right: 15px;*/
+}
+
+
+.navbar-nav {
+  margin-left: 80px;
+}
+
+.navbar {
+	 /* box-shadow: 0px 1px 10px #1c95ce;*/
+	  background-color: #f7f8f9;
+}
+
+#header {
+	margin-bottom: 120px;
+}
+
+.nav-item a:hover {
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+
+#header-nav .active>.nav-link {
+   font-weight: bold;
+   
+}
+
+
+.navbar.navbar-light .navbar-nav .nav-item.active > .nav-link {
+    background-color: transparent;
+}
+
+
+
+/********** Extra Large devices only **********/
+@media (min-width: 1200px) {
+
+
+}
+
+
+/********** Large devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+
+
+
+}
+     
+/********** Medium devices only **********/
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+
+
+
+
+
+}
+
+
+/********** Small devices only **********/
+@media (min-width: 576px) and (max-width: 767px) {
+
+#header {
+	margin-bottom: 80px;
+}
+
+
+}
+
+
+/********** Extra Small Devices Only **********/
+@media (min-width: 480px) and  (max-width: 575px) {
+
+#header {
+	margin-bottom: 80px;
+}
+
+
+
+
+}
+
+
+/********** Super extra small devices Only :-)  **********/
+@media (min-width: 380px) and (max-width: 479px) {
+
+#header {
+	margin-bottom: 90px;
+}
+
+
+
+}
+
+/********** iphone 5  **********/
+@media (min-width: 320px) and (max-width: 379px) {
+
+#header {
+	margin-bottom: 80px;
+}
+
+
+}

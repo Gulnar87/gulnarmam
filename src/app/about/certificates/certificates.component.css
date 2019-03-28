@@ -1,0 +1,31 @@
+h3 {
+	/*font-family: 'Aladin', cursive;*/
+			font-family: 'Quicksand',  sans-serif;
+			padding-bottom: 30px;
+}
+
+.swiper-button-prev:active, .swiper-button-prev:focus, .swiper-button-next:active, .swiper-button-next:focus {
+  outline: 0;
+  border: none;
+  -moz-outline-style: none
+}
+
+
+.swiper-button-prev {
+ position: absolute;
+  left: -25px;
+
+
+}
+
+.swiper-button-next {
+   position: absolute;
+   right: -25px;
+
+}
+
+
+/*.swiper-container {
+    position: relative;
+
+}*/

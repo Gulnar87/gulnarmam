@@ -1,0 +1,24 @@
+<div  class="swiper-container" [swiper]="config"> 
+	<div class="row section-title">
+		<div class="col-12">
+			<div class="row pb-3">
+				<div class="col-6"> 
+					<h3 style="font-size: 30px; color: #1c95ce" class=""> Certificates </h3>
+				</div>
+				<div class="col-6">   
+					<a routerLink="/certificates" class="float-right" style="color: #1c95ce"> See All </a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="swiper-wrapper pb-5">
+        <app-certificate-item class="swiper-slide" *ngFor="let certificate of certificates;" [certificate]="certificate"> 
+           </app-certificate-item>     
+    </div>
+    <div class="swiper-pagination"></div> 
+</div>
+<div class="swiper-button-prev swiper-button-blue" [hidden]="config.navigation === false"></div>
+<div class="swiper-button-next swiper-button-blue" [hidden]="config.navigation === false"></div>  
+
+
+
