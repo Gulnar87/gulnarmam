@@ -1,18 +1,28 @@
-#profile-pic {
-  position:relative;
-  margin:0 auto;
-
-}
-
-#profile-pic img {
-  position:absolute;
-  left:0;
-}
-
 .row-photo {
-	margin-left: 50px;
-   margin-bottom: 200px;
+    position:relative;
+    min-height: 500px;
+    margin: 0 auto;
 
+}
+
+
+
+#profile-pic img{
+
+ position:absolute;
+    left: 0;
+    right:0;
+    bottom: 0;
+    margin: auto;
+    min-height: 500px;
+
+ 
+
+}
+
+ #bio {
+  width: 80%;
+  margin: 0 auto;
 
 }
 
@@ -22,14 +32,15 @@
 
 
 .overview {
-    color: #1c95ce ;
+    color: #1c95ce;
 	font-family: 'Quicksand',  sans-serif;
 	font-style: 700;
 }
 
+
 #hello {
 	color: #1c95ce; 
-	font-size: 180px
+	font-size: 160px
 }
 
 #name{
@@ -54,8 +65,7 @@
 
 /********** Extra Large devices only **********/
 @media (min-width: 1200px) {
-
-
+ 
 }
 
 
@@ -64,7 +74,7 @@
 
 #hello {
 
-	font-size: 155px
+	font-size: 130px
 }
 
 #name{
@@ -76,9 +86,6 @@
 
 }
 
-.row-photo {
-    margin-bottom: 150px;
-}
 
 
 }
@@ -86,6 +93,7 @@
 /********** Medium devices only **********/
 
 @media (min-width: 768px) and (max-width: 991px) {
+
 
 #hello {
 	font-size: 110px
@@ -102,9 +110,20 @@
 
 
 .row-photo {
-    margin-bottom: 110px;
+
+  min-height: 400px;
+    max-height: 400px;
+
+  
 }
 
+
+#profile-pic img{
+
+ min-height: 400px;
+   max-height: 400px;
+    left: 50px;
+}
 
 
 }
@@ -114,7 +133,7 @@
 @media (min-width: 576px) and (max-width: 767px) {
 
 #hello {
-	font-size: 80px
+	font-size: 60px
 }
 
 #name{
@@ -126,11 +145,28 @@
 
 }
 
+
 .row-photo {
-	margin-left: 20px;
-    margin-bottom: 130px;
+  min-height: 300px;
+  max-height: 300px;
+
+  
+}
+
+ #bio {
+  width: 90%;
+  font-size: 15px;
 
 }
+
+#profile-pic img{
+
+ min-height: 300px;
+   max-height: 300px;
+    left: 40px;
+}
+
+
 
 
 }
@@ -141,7 +177,7 @@
 
 
 #hello {
-	font-size: 50px; 
+	font-size: 45px; 
 }
 
 #name{
@@ -154,13 +190,25 @@
 }
 
 .row-photo {
-	margin-left: 20px;
-    margin-bottom: 80px;
 
+  min-height: 250px;
+    max-height: 250px;
+
+  
 }
 
-.col-home {
-	padding-top: 30px;
+
+#profile-pic img{
+
+ min-height: 250px;
+   max-height: 250px;
+    left: 40px;
+}
+
+ #bio {
+  width: 90%;
+  font-size: 12px;
+
 }
 
 
@@ -171,7 +219,7 @@
 @media (min-width: 380px) and (max-width: 479px) {
 
 #hello {
-	font-size: 40px; 
+	font-size: 30px; 
 }
 
 #name{
@@ -189,14 +237,30 @@
 }
 
 
-.row-photo {
-	margin-left: 20px;
-    margin-bottom: 60px;
-
-}
-
 .overview {
     font-size: 25px;
+}
+
+.row-photo {
+
+  min-height: 200px;
+    max-height: 200px;
+
+  
+}
+
+
+#profile-pic img{
+
+ min-height: 200px;
+   max-height: 200px;
+    left: 40px;
+}
+
+ #bio {
+  width: 90%;
+  font-size: 10px;
+
 }
 
 
@@ -219,10 +283,19 @@
 }
 
 .row-photo {
-	margin-left: 15px;
-    margin-bottom: 30px;
+
+  min-height: 150px;
+    max-height: 150px;
+
+  
+}
 
 
+#profile-pic img{
+
+ min-height: 150px;
+   max-height: 150px;
+    left: 30px;
 }
 
 .social-icon{
@@ -233,6 +306,12 @@
 
 .overview {
     font-size: 20px;
+}
+
+ #bio {
+  width: 90%;
+  font-size: 10px;
+
 }
 
 }

@@ -1,4 +1,4 @@
-<div class="row text-row">
+<div class="row text-row mb-5">
   <div class="col-12">
     <h1 class="text-center projectName"> {{ project.name}}</h1>
     <h5 class="text-center subtitle"> {{ project.subTitle }}</h5>
@@ -18,49 +18,53 @@
   </div>
 </div> -->
 
-<div class="row  mb-5">
+<div class="row text-row mb-5">
   <div class="col-12 text-center">
-    <img [src]="project.pictures.pic1" alt="" class="img-fluid mb-3" height="">
-<!--     <img [src]="project.pictures.pic2" alt="" class="img-fluid mb-3"> -->
-
+    <img [src]="project.pictures.pic1" alt="" class="img-fluid px-5">
   </div>
 </div>
 
-<div class="row text-row">
+<div class="row text-row mb-5">
   <div class="col-12">
-      <p class="description"> {{ project.description }} </p>
+      <p class="description px-5"> {{ project.description }} </p>
   </div>
 </div>
 
 <div class="row text-row mb-5">
   <div class="col-12 text-center">
-<!--     <img [src]="project.pictures.pic1" alt="" class="img-fluid mb-3"> -->
-    <img [src]="project.pictures.pic2" alt="" class="img-fluid mb-3">
+    <img [src]="project.pictures.pic2" alt="" class="img-fluid px-5">
 
-  </div>
-</div>
-
-
-<div class="row text-row">
-  <div class="col-12">
-    <h5> Responsive web design </h5>
-    <p class="description"> {{ project.description }} </p>
   </div>
 </div>
 
 
 <div class="row text-row mb-5">
   <div class="col-12 text-center" >
-    <img [src]="project.pictures.pic3" height="" width="" class="img-fluid">
- 
-<!--   </div>
-    <div class="col-6 text-center">
-    <img [src]="project.pictures.pic3" height="534" width="300"  alt="" class="img-fluid">
- 
-  </div> -->
+    <img [src]="project.pictures.pic3" height="" width="" class="img-fluid px-5">
+
+</div>
 </div>
 
+<div class="row text-row mb-5">
+  <div class="col-12 text-center" >
+    <img [src]="project.pictures.pic4" height="" width="" class="img-fluid px-5">
 
+</div>
+</div>
+
+<div class="row text-row mb-5">
+  <div class="col-12 text-center" >
+    <img [src]="project.pictures.pic5" height="" width="" class="img-fluid px-5">
+
+</div>
+</div>
+
+<div class="row text-row mb-5">
+  <div class="col-12 text-center" >
+ <a type="button" mdbBtn color="info" type="button"  [href]="project.linkToPage" target="_blank"> Link to page </a>
+
+</div>
+</div>
 
 <!-- <div class="row mb-3">
   <div class="col-12">

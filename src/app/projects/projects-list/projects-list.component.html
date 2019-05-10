@@ -1,20 +1,25 @@
 <div class="row row-photo">
-	<div class="col-md-4 col-sm-5 col-5">
-		<div  [@photosAnimation]="photos.length">
+	<div class="col-xl-5 col-lg-6 col-md-5 col-sm-5 col-5 col-pic">
+		<div  [@photosAnimation]="photos.length" id="profile">
 			<div *ngFor="let photo of photos" id="profile-pic">
-				<img  [src]="photo.img" class="img-fluid" style="border-radius: 50%;"  width="700" height="926">
+				<img  [src]="photo.img" class="img-fluid" style="border-radius: 50%;"  width="" height="">
 			</div>
 		</div>	
-	</div>
-	<div class="col-md-8 col-sm-7 col-7 pt-xl-5 pt-lg-3 pt-md-4 pt-sm-4 col-home">
+
+
+</div>
+	<div class="col-xl-7 col-lg-6 col-md-7 col-sm-7 col-7 ">
+    <div class="col-home">
+
    	<div [@textAnimation]>
 			<h1 class="text-center" id="hello">  &lt; Hello! &gt;</h1>
 		</div>
-		<div [@textAnimation1] style="color: #919a9e">
-			<h1 class="text-center" id="name"> I'm Gulnar</h1>
-			<h2 class="text-center" id="profession"> Front-end web developer </h2>
+		<div [@textAnimation1] style="color: #434343">
+			<h1 class="text-center" id="name"> I'm Gulnar!</h1>
+			<h2 class="text-center" id="profession"> Front-end web developer! </h2>
+      <p class="text-center" id="bio"><i class="d-none d-sm-block"> I develop user-friendly and dynamic Single Page Applications (SPA) using front end JavaScript framework Angular. I will take on your project on SPA with great excitement and enthusiasm, along with the professional approach of utilizing the leading practices.</i>  <i class="d-block d-sm-none"> I develop user-friendly and dynamic Single Page Applications (SPA) using front end JavaScript framework Angular. </i> </p>
 		</div>
-    <div class="text-center" id="social-icons">
+ <!--    <div class="text-center" id="social-icons">
       <a href="mailto:gulnar_mammadova@yahoo.com" class="btn social-icon"> 
         <fa-icon [icon]="faEnvelopeOpen"></fa-icon>
       </a> 
@@ -27,10 +32,11 @@
       <a href="https://www.linkedin.com/in/gulnar-mammadova-6988703a/" target="_blank" class="btn social-icon"> 
         <fa-icon [icon]="faLinkedinIn"></fa-icon>
        </a>
-    </div>
-  </div>	 
+    </div> -->
+  </div>	
+  </div> 
 </div>
-<hr>
+<hr >
 <div class="row">
   <div class="col-12">  
     <h2 class="text-center overview pt-3 pb-3"> OVERVIEW OF MY WORK </h2>
