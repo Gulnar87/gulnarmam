@@ -15,16 +15,14 @@ export class DataStorageService {
     getCertificates(): Observable<Certificate[]> {
         return this.http.get<Certificate[]>(environment.apiUrl);
 
-
     }
 
 
-     getProjects(): Observable<Project[]> {
+    getProjects(): Observable<Project[]> {
         return this.http.get<Project[]>(environment.apiUrlProjects);
-
     }
 
-       getProject(id: string): Observable<Project[]> {
+    getProject(id: string): Observable<Project[]> {
         return this.http.get<Project[]>(`${environment.apiUrlProjects}/${id}`);
 
     }

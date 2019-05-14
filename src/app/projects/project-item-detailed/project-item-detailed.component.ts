@@ -15,9 +15,8 @@ import { DataStorageService } from '../../shared/dataStorage.service';
 export class ProjectItemDetailedComponent implements OnInit, OnDestroy {
   subscription: Subscription;
 	id: number; 
-	project: Project;
 	projects: Project[] = [];
-
+  project: Project;
    
 	
 
@@ -28,15 +27,27 @@ export class ProjectItemDetailedComponent implements OnInit, OnDestroy {
 
   ngOnInit() {
 
-  	  this.route.params
-      .subscribe((params: Params) => {
-        this.id = +params['id'];
+    const project_id = this.route.snapshot.paramMap.get('id');
 
-        this.project = this.projectService.getProject(this.id)
+    this.dsService.getProjects()
+          .subscribe(
+              (response: Project[]) => {
+                  this.projects = response;
+                  this.project = this.projects.find(p => p.id.toString() === project_id.toString());
+                  console.log(this.projects, project_id);
+                  console.log(this.project);
+              },
+              // (error: HttpErrorResponse) => console.log(error)
+          );
 
+    // this.dsService.getProject(project_id).subscribe((projects: Project[]) => {
+    //   console.log(projects);
+    // });
 
-
-      });
+  	  // this.route.params.subscribe((params: Params) => {
+     //    this.id = params['id'];
+     //    this.project = this.projectService.getProject(this.id)
+     //  });
 
     //   this.dsService.getProject(this.route.snapshot.paramMap.get('id'))
     // .subscribe(res => this.project = res);
