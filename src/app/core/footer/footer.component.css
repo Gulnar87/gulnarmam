@@ -4,7 +4,7 @@
 
 .menu a:hover {
   text-decoration: none;
-  color: #c40909;
+  color: #1c95ce;
   cursor: pointer;
 }
 
@@ -13,57 +13,92 @@
 
 }
 
-
-
 .social-icons a:hover {
-   color: #c40909;
+   color: #1c95ce;
    box-shadow: none;
 
 }
 
-/* .btn:active, .btn:focus, .btn:visited {
-     outline: 0;
-  border: none;
-  -moz-outline-style: none;
+.list-inline-item a{
+    color: #434343 ;
     text-decoration: none;
- 
-}
-*/
-/*.btn-circle.btn-xl:nth-of-type(2):hover {
-    
-       color:#2d4373;
+
 }
 
-
-
-
-.btn-circle.btn-xl:nth-of-type(3):hover {
-
-   color: #2795e9 ;
+.list-inline-item {
+	padding-right: 30px;
+    font-size: 20px;
 }
 
+/********** Extra Large devices only **********/
+@media (min-width: 1200px) {
 
-
-.btn-circle.btn-xl:nth-of-type(4):hover {
-
-  color: #2b2b2b;
 
 }
 
 
+/********** Large devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
 
-.btn-circle.btn-xl:nth-of-type(5):hover {
 
-   color:#305777;
+
+}
+     
+/********** Medium devices only **********/
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+
+
+
+
+
 }
 
 
-.btn-circle.btn-xl:nth-of-type(6):hover {
- 
-      color:#005983;
+/********** Small devices only **********/
+@media (min-width: 576px) and (max-width: 767px) {
+
+
+
+
 }
 
-.btn-circle.btn-xl:nth-of-type(7):hover {
- 
-      color: #ff0000;
-}*/
+
+/********** Extra Small Devices Only **********/
+@media (min-width: 480px) and  (max-width: 575px) {
+
+
+
+
+
+}
+
+
+/********** Super extra small devices Only :-)  **********/
+@media (min-width: 380px) and (max-width: 479px) {
+
+
+.list-inline-item {
+	padding-right: 10px;
+}
+
+}
+
+/********** iphone 5  **********/
+@media (min-width: 320px) and (max-width: 379px) {
+
+.list-inline-item {
+	padding-right: 10px;
+	font-size: 15px;
+}
+
+
+}
+
+
+
+
+
+
+

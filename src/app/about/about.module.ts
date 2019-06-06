@@ -12,6 +12,8 @@ import { AboutRoutingModule } from '../about/about-routing.module';
 import { SwiperModule, SwiperConfigInterface,
   SWIPER_CONFIG } from 'ngx-swiper-wrapper';
 
+import { NgxGalleryModule } from 'ngx-gallery';
+
 const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
   observer: true,
   direction: 'horizontal',
@@ -36,7 +38,11 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
      imports: [  
      CommonModule,
      SwiperModule, 
-     AboutRoutingModule
+     AboutRoutingModule,
+             NgxGalleryModule
+
+
+
 
   ],
 
@@ -44,7 +50,8 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
  providers: [{
       provide: SWIPER_CONFIG,
       useValue: DEFAULT_SWIPER_CONFIG
-    }],
+    }
+    ],
    
   exports: []
   

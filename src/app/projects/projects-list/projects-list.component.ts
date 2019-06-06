@@ -28,10 +28,10 @@ import {
     trigger('photosAnimation', [   
  
       transition('* => *', [
-        query('img', style({  opacity: 0,  transform: 'translateX(0)', offset: 0})),
+        query('img', style({  opacity: 0,  transform: 'translateX(0)'})),
         query('img',
           stagger('2000ms', [        
-            animate('1500ms ease-out', keyframes([ style({ opacity: 1,  transform: 'translateX(0)', offset: 0.6})  ]) ) 
+            animate('1500ms ease-out', keyframes([ style({ opacity: 1,  transform: 'translateX(0)'})  ]) ) 
         ])) 
 
       ])

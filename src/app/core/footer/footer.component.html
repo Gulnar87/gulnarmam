@@ -17,10 +17,10 @@
           <div class="col-md-12 col-12 footer-col"> 
         <div class="flex-row"> 
           <ul class="col-md footer-col d-flex flex-md-row justify-content-center menu font-weight-bold">
-            <li class="list-inline-item pr-3"><a > About</a></li>
-            <li class="list-inline-item pr-3"> <a> Projects </a></li>
-             <li class="list-inline-item pr-3"> <a> BookStore </a></li>
-            <li class="list-inline-item pr-3"> <a> Certificates </a></li>
+            <li class="list-inline-item"><a [routerLink]="['/', 'about']"> About</a></li>
+            <li class="list-inline-item " > <a [routerLink]="['/', 'work']"> Projects </a></li>
+
+            <li class="list-inline-item " > <a [routerLink]="['/', 'certificates']"> Certificates </a></li>
           </ul>
         </div>
       </div>
@@ -30,18 +30,16 @@
          <a href="mailto:gulnar_mammadova@yahoo.com" class="btn social-icon"> 
             <fa-icon [icon]="faEnvelopeOpen" ></fa-icon>
              </a> 
-          <a href="https://www.facebook.com/gulnarmem" target="_blank" class="btn social-icon"> 
+        <!--   <a href="https://www.facebook.com/gulnarmem" target="_blank" class="btn social-icon"> 
             <fa-icon [icon]="faFacebookF"></fa-icon>
-          </a>
-          <a href="https://twitter.com/" target="_blank" class="btn social-icon" role="button"> 
-           <fa-icon [icon]="faTwitter"></fa-icon>
-          </a>
+          </a> -->
+    
           <a href="https://github.com/Gulnar87" target="_blank" class="btn social-icon "> 
              <fa-icon [icon]="faGithub"></fa-icon>
           </a>
-          <a href="" target="_blank" class="btn social-icon"> 
+      <!--     <a href="" target="_blank" class="btn social-icon"> 
              <fa-icon [icon]="faInstagram"></fa-icon>
-           </a>
+           </a> -->
           <a href="https://www.linkedin.com/in/gulnar-mammadova-6988703a/" target="_blank" class="btn social-icon"> 
               <fa-icon [icon]="faLinkedinIn"></fa-icon>
           </a>

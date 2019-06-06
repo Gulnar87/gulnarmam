@@ -1,6 +1,6 @@
 .text-row {
-	margin-left: 40px;
-	margin-right: 40px;
+	margin: 0 auto;
+	width: 75%;
 
 }
 
@@ -14,8 +14,8 @@
 
 }
 
-.subTitle, .description {
-
+.columns {
+	padding-bottom: 50px;
 }
 
 
@@ -58,7 +58,10 @@
 @media (min-width: 480px) and  (max-width: 575px) {
 
 
+.text-row {
+width: 85%;
 
+}
 
 
 }
@@ -68,8 +71,7 @@
 @media (min-width: 380px) and (max-width: 479px) {
 
 .text-row {
-	margin-left: 20px;
-	margin-right: 20px;
+width: 90%;
 
 }
 
@@ -81,8 +83,8 @@
 @media (min-width: 320px) and (max-width: 379px) {
 
 .text-row {
-	margin-left: 20px;
-	margin-right: 20px;
+	width: 90%;
+
 
 }
 

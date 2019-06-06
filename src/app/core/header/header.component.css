@@ -1,23 +1,35 @@
+
+#header {
+	margin-bottom: 140px;
+}
+
+.navbar {
+  background-color: #f7f8f9;
+}
+
+.logo {
+	width: 55px;
+	height: 55px;
+	margin-left: 50px;
+}
+
+.myName {
+	padding-left: 30px;
+	font-size: 18px;
+	color: #434343;
+	font-family: 'Audrey';
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+
 .navbar-nav .nav-link {
 	color: #434343 !important;
 	font-family: 'Quicksand', sans-serif, !important;
 	font-size: 20px;
- /*padding-right: 15px;*/
+    padding-right: 20px;
 }
 
-
-.navbar-nav {
-  /*margin-left: 80px;*/
-}
-
-.navbar {
-	/*  box-shadow: none;*/
-	  background-color: #f7f8f9;
-}
-
-#header {
-	margin-bottom: 160px;
-}
 
 .nav-item a:hover {
   text-decoration: none;
@@ -27,12 +39,10 @@
 }
 
 
-
 #header-nav .active>.nav-link {
    font-weight: bold;
    
 }
-
 
 .navbar.navbar-light .navbar-nav .nav-item.active > .nav-link {
     background-color: transparent;
@@ -44,10 +54,15 @@
   color: #434343;
 }
 
+#social-icons {
+	margin-right: 50px;
+}
+
 #social-icons a:hover {
    color: #1c95ce;
    box-shadow: none;
 }
+
 
 /********** Extra Large devices only **********/
 @media (min-width: 1200px) {
@@ -59,7 +74,10 @@
 /********** Large devices only **********/
 @media (min-width: 992px) and (max-width: 1199px) {
 
+#header {
+	margin-bottom: 130px;
 
+}
 
 }
      
@@ -68,10 +86,48 @@
 @media (min-width: 768px) and (max-width: 991px) {
 
 #header {
-	margin-bottom: 100px;
+	margin-bottom: 120px;
+
+}
+
+.navbar-nav  {
+	padding-top: 20px;
 }
 
 
+.logo {
+
+	margin-left: 30px;
+	padding-left: 0;
+	width: 50px;
+	height: 50px;
+}
+
+.myName {
+	font-size: 17px;
+	
+}
+
+.navbar-toggler {
+	margin-right: 30px;
+	padding-right: 0;
+}
+
+
+.nav-item {
+
+ margin-left: 35px;
+
+}
+.navbar-nav .nav-link {
+	font-size: 18px;
+   
+}
+
+#social-icons {
+	margin-left: 25px;
+
+}
 
 
 }
@@ -81,9 +137,44 @@
 @media (min-width: 576px) and (max-width: 767px) {
 
 #header {
-	margin-bottom: 100px;
+	margin-bottom: 120px;
 }
 
+.logo {
+	margin-left: 20px;
+	padding-left: 0;
+	width: 45px;
+	height: 45px;
+}
+
+.myName {
+   font-size: 16px;
+   padding-left: 25px;
+}
+
+.navbar-toggler {
+  margin-right: 20px;
+  padding-right: 0;
+}
+
+.navbar-nav  {
+  padding-top: 20px;
+}
+
+.nav-item {
+  margin-left: 20px;
+
+}
+
+.navbar-nav .nav-link {
+  font-size: 18px;
+
+}
+
+#social-icons {
+  margin-left: 10px;
+
+}
 
 }
 
@@ -92,10 +183,51 @@
 @media (min-width: 480px) and  (max-width: 575px) {
 
 #header {
-	margin-bottom: 100px;
+	margin-bottom: 110px;
+}
+
+.logo {
+
+	margin-left: 20px;
+	padding-left: 0;
+	width: 40px;
+	height: 40px;
+}
+
+.myName {
+	font-size: 14px;
+	padding-left: 25px;
+}
+
+.navbar-toggler {
+   margin-right: 20px;
+   padding-right: 0;
 }
 
 
+.navbar-nav  {
+   padding-top: 20px;
+}
+
+.nav-item {
+
+	margin-left: 20px;
+
+}
+
+.navbar-nav .nav-link {
+
+  font-size: 16px;
+
+}
+
+
+
+#social-icons {
+	margin-left: 10px;
+	
+
+}
 
 
 }
@@ -105,18 +237,98 @@
 @media (min-width: 380px) and (max-width: 479px) {
 
 #header {
-	margin-bottom: 100px;
+	margin-bottom: 110px;
+}
+
+.logo {
+
+	margin-left: 10px;
+	padding-left: 0;
+	width: 35px;
+	height: 35px;
+}
+
+.myName {
+	font-size: 12px;
+	padding-left: 20px;
+}
+
+.navbar-toggler {
+	margin-right: 10px;
+	padding-right: 0;
 }
 
 
+.navbar-nav  {
+	padding-top: 15px;
+}
+
+.nav-item {
+
+	margin-left: 10px;
+
+}
+
+.navbar-nav .nav-link {
+
+	font-size: 16px;
+
+}
+
+#social-icons {
+	margin-left: 0px;
+	
+
+}
 
 }
 
 /********** iphone 5  **********/
 @media (min-width: 320px) and (max-width: 379px) {
 
+
 #header {
-	margin-bottom: 100px;
+	margin-bottom: 110px;
+}
+
+.navbar-nav  {
+	padding-top: 15px;
+}
+
+
+.logo {
+	width: 30px;
+	height: 30px;
+	margin-left: 10px;
+	padding-left: 0;
+}
+
+.myName {
+	font-size: 10px;
+    padding-left: 15px;
+}
+
+.navbar-toggler {
+	margin-right: 10px;
+	padding-right: 0;
+}
+
+.navbar-nav .nav-link {
+
+	font-size: 14px;
+
+}
+
+.nav-item {
+
+	margin-left: 10px;
+
+}
+
+#social-icons {
+	margin-left: 0px;
+	
+
 }
 
 

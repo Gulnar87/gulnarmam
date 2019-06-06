@@ -6,7 +6,12 @@ import { Certificate } from './certificate.model';
 import { CertificateService } from './certificate.service';
 import { DataStorageService } from '../../shared/dataStorage.service';
 
+import { NgxGalleryOptions, NgxGalleryImage, NgxGalleryAnimation } from 'ngx-gallery';
 
+import { ActivatedRoute, Params, Router} from '@angular/router';
+
+
+import 'hammerjs';
 
 @Component({
   selector: 'app-certificates',
@@ -15,29 +20,40 @@ import { DataStorageService } from '../../shared/dataStorage.service';
 })
 export class CertificatesComponent implements OnInit {
 
-   certificates: Certificate[];
+   certificates: Certificate[] = [];
+
+
 
 
   constructor(private certificateService: CertificateService,
-    private dsService: DataStorageService) { }
+    private dsService: DataStorageService,  private route: ActivatedRoute) { }
 
   ngOnInit() {
+
+
+  
 
      this.dsService.getCertificates()
             .subscribe(
                 (response: Certificate[]) => {
                     this.certificates = response;
+              
                     this.certificateService.setCertificates(this.certificates);
 
-                    // console.log(response)
-                
+
+           
+                    console.log(this.certificates + 'this is response')
+            
+            
                   
                 },
                 (error: HttpErrorResponse) => console.log(error)
             );
 
-            // console.log(this.certificates)
+            console.log(this.certificates)       
+
   }
+
 
 
  @ViewChild(SwiperComponent) componentRef?: SwiperComponent;
@@ -48,7 +64,7 @@ export class CertificatesComponent implements OnInit {
     slidesPerView: 4,
      // loop: true,
     keyboard: true,
-    mousewheel: true,
+    mousewheel: false,
     scrollbar: false,
     navigation: true,
     pagination: true,

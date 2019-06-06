@@ -2,9 +2,11 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { environment } from 'src/environments/environment';
-import { map } from 'rxjs/operators';
-import { Certificate } from '../about/certificates/certificate.model';
+import { map, publishReplay, refCount } from 'rxjs/operators';
+import { Certificate, Root } from '../about/certificates/certificate.model';
 import { Project} from '../projects/project.model';
+
+import { ImageItem, GalleryItem } from '@ngx-gallery/core';
 
 
 @Injectable()
@@ -27,4 +29,7 @@ export class DataStorageService {
 
     }
  
+
+
+
 }
