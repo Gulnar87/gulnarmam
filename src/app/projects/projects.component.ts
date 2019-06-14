@@ -23,6 +23,8 @@ export class ProjectsComponent implements OnInit {
             .subscribe(
                 (response: Project[]) => {
                     this.projects = response;
+                     // this.projects.sort((a: Project, b: Project) => b.id - a.id);
+                     
 
                     this.projectService.setProjects(this.projects);
 

@@ -3,7 +3,7 @@ export interface Root {
 }
 
 export interface Project {
-    id: string;
+    id: number;
     name: string;
     description: string;
     techUsed: string;
@@ -12,6 +12,7 @@ export interface Project {
     pictures: Pictures;
     picHome: string;
     linkToPage: string;
+    picTop: string;
 }
 
 

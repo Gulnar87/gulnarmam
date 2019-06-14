@@ -134,6 +134,7 @@ export class ProjectsListComponent implements OnInit, OnDestroy {
   	.subscribe(
         (projects: Project[]) => {
           this.projects = projects;
+                 // this.projects.sort((a: Project, b: Project) => b.id - a.id);
              console.log('list1', this.projects)
         }
       );

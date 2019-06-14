@@ -1,13 +1,15 @@
-<div class="row text-row mb-5">
-  <div class="col-12">
-    <h1 class="text-center projectName"> {{ project.name}}</h1>
-    <h5 class="text-center subtitle"> {{ project.subTitle }}</h5>
+
+
+<div class="row pb-4">
+  <div class="col-12 text-center">
+    <img [src]="project.picTop" alt="" class="img-fluid">
   </div>
 </div>
 
-<div class="row mb-5">
-  <div class="col-12 text-center">
-    <img [src]="project.pictures.pic1" alt="" class="img-fluid">
+<div class="row text-row pb-4">
+  <div class="col-12">
+    <h1 class="text-center projectName "> {{ project.name}}</h1>
+    <h5 class="text-center subtitle"> {{ project.subTitle }}</h5>
   </div>
 </div>
 
@@ -17,12 +19,12 @@
   </div>
 
 
-  <div class="col-12 text-center columns">
-    <img [src]="project.pictures.pic2" alt="" class="img-fluid ">
+  <div class="col-12 text-center columns" *ngFor="let picture of project.pictures" >
+    <img [src]="picture.pic" alt="" class="img-fluid ">
 
   </div>
 
-  <div class="col-12 text-center columns" >
+<!--   <div class="col-12 text-center columns" >
     <img [src]="project.pictures.pic3" height="" width="" class="img-fluid ">
 
 </div>
@@ -41,7 +43,7 @@
  <a type="button" mdbBtn color="info" type="button"  [href]="project.linkToPage" target="_blank"> Link to page </a>
 
 </div>
-
+ -->
 
 
 </div>

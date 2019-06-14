@@ -1,6 +1,6 @@
 
 #header {
-	margin-bottom: 140px;
+	margin-bottom: 80px;
 }
 
 .navbar {
@@ -74,10 +74,7 @@
 /********** Large devices only **********/
 @media (min-width: 992px) and (max-width: 1199px) {
 
-#header {
-	margin-bottom: 130px;
 
-}
 
 }
      
@@ -86,7 +83,7 @@
 @media (min-width: 768px) and (max-width: 991px) {
 
 #header {
-	margin-bottom: 120px;
+	margin-bottom: 70px;
 
 }
 
@@ -137,7 +134,7 @@
 @media (min-width: 576px) and (max-width: 767px) {
 
 #header {
-	margin-bottom: 120px;
+	margin-bottom: 70px;
 }
 
 .logo {
@@ -183,7 +180,7 @@
 @media (min-width: 480px) and  (max-width: 575px) {
 
 #header {
-	margin-bottom: 110px;
+	margin-bottom: 60px;
 }
 
 .logo {
@@ -237,7 +234,7 @@
 @media (min-width: 380px) and (max-width: 479px) {
 
 #header {
-	margin-bottom: 110px;
+	margin-bottom: 60px;
 }
 
 .logo {
@@ -288,7 +285,7 @@
 
 
 #header {
-	margin-bottom: 110px;
+	margin-bottom: 50px;
 }
 
 .navbar-nav  {

@@ -34,6 +34,7 @@ export class ProjectItemDetailedComponent implements OnInit, OnDestroy {
               (response: Project[]) => {
                   this.projects = response;
                   this.project = this.projects.find(p => p.id.toString() === project_id.toString());
+                         // this.projects.sort((a: Project, b: Project) => b.id - a.id);
                   console.log(this.projects, project_id);
                   console.log(this.project);
               },
