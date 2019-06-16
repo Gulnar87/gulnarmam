@@ -16,6 +16,8 @@
 <div class="row text-row ">
   <div class="col-12 columns">
       <p class="description "> {{ project.description }} </p>
+
+            <p class="description "> Technology used: {{ project.techUsed }} </p>
   </div>
 
 
@@ -25,7 +27,7 @@
   </div>
 
   <div class="col-12 text-center columns" >
- <a type="button" mdbBtn color="info" type="button"  [href]="project.linkToPage" target="_blank"> Link to page </a>
+ <a mdbBtn color="info" type="button"  [href]="project.linkToPage" target="_blank"> <i class="fas fa-external-link-alt"></i> View online </a>
 
 </div>
 
