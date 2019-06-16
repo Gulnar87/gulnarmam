@@ -1,7 +1,14 @@
 h3 {
 	/*font-family: 'Aladin', cursive;*/
 			font-family: 'Quicksand',  sans-serif;
-			padding-bottom: 30px;
+			
+}
+
+.swiperRow, .section-title {
+
+  width: 75%;
+  margin: 0 auto;
+
 }
 
 .swiper-button-prev:active, .swiper-button-prev:focus, .swiper-button-next:active, .swiper-button-next:focus {
@@ -11,21 +18,152 @@ h3 {
 }
 
 
+.swiperRow {
+  position: relative;
+}
+
 .swiper-button-prev {
  position: absolute;
-  left: -25px;
+  left: -40px;
 
 
 }
 
 .swiper-button-next {
    position: absolute;
-   right: -25px;
+   right: -40px;
 
 }
 
 
-/*.swiper-container {
-    position: relative;
 
-}*/
+
+
+/********** Extra Large devices only **********/
+@media (min-width: 1200px) {
+
+
+}
+
+
+/********** Large devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+
+
+
+}
+     
+/********** Medium devices only **********/
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+
+
+
+
+
+}
+
+
+/********** Small devices only **********/
+@media (min-width: 576px) and (max-width: 767px) {
+
+.swiperRow, .section-title {
+width: 85%;
+
+}
+
+.swiper-button-prev {
+ position: absolute;
+  left: -30px;
+
+
+}
+
+.swiper-button-next {
+   position: absolute;
+   right: -30px;
+
+}
+
+
+}
+
+
+/********** Extra Small Devices Only **********/
+@media (min-width: 480px) and  (max-width: 575px) {
+
+
+.swiperRow, .section-title {
+width: 85%;
+
+}
+
+.swiper-button-prev {
+ position: absolute;
+  left: -30px;
+
+
+}
+
+.swiper-button-next {
+   position: absolute;
+   right: -30px;
+
+}
+
+
+}
+
+
+/********** Super extra small devices Only :-)  **********/
+@media (min-width: 380px) and (max-width: 479px) {
+
+.swiperRow, .section-title {
+width: 90%;
+
+}
+
+.swiper-button-prev {
+ position: absolute;
+  left: -30px;
+
+
+}
+
+.swiper-button-next {
+   position: absolute;
+   right: -30px;
+
+}
+
+
+
+}
+
+/********** iphone 5  **********/
+@media (min-width: 320px) and (max-width: 379px) {
+
+.swiperRow, .section-title  {
+  width: 85%;
+
+
+}
+
+.swiper-button-prev {
+ position: absolute;
+  left: -30px;
+
+
+}
+
+.swiper-button-next {
+   position: absolute;
+   right: -30px;
+
+}
+
+
+}
+
+
