@@ -12,4 +12,7 @@ export class ShortBioComponent implements OnInit {
   ngOnInit() {
   }
 
+
+
+
 }

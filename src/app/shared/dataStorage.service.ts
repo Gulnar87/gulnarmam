@@ -1,9 +1,16 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+
 import { environment } from 'src/environments/environment';
 import { Certificate, Root } from '../about/certificates/certificate.model';
 import { Project} from '../projects/project.model';
+
+
+
+
+
+
 
 
 
@@ -27,8 +34,8 @@ export class DataStorageService {
         return this.http.get<Project[]>(`${environment.apiUrlProjects}/${id}`);
 
     }
+
+  
  
-
-
 
 }
