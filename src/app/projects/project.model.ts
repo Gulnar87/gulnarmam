@@ -18,11 +18,7 @@ export interface Project {
 
 export interface Pictures{
   
-    pic1: string;
-    pic2: string;
-    pic3: string;
-    pic4: string;
-    pic5: string;
-    pic6: string;
+    pic: string;
+
   
 }

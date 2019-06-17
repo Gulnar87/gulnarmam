@@ -2,7 +2,7 @@ import { Component, OnInit, Input, OnDestroy} from '@angular/core';
 import { ActivatedRoute, Params, Router} from '@angular/router';
 import { Subscription } from 'rxjs';
 import { ProjectService } from '../../projects/project.service';
-import { Project, Root } from '../project.model';
+import { Project, Root, Pictures } from '../project.model';
 import { Pipe, PipeTransform } from '@angular/core';
 import { DataStorageService } from '../../shared/dataStorage.service';
 
@@ -15,8 +15,9 @@ import { DataStorageService } from '../../shared/dataStorage.service';
 export class ProjectItemDetailedComponent implements OnInit, OnDestroy {
   subscription: Subscription;
 	id: number; 
-	projects: Project[] = [];
+	projects: Project[] ;
   project: Project;
+  pictures: Pictures[]
    
 	
 
@@ -33,6 +34,8 @@ export class ProjectItemDetailedComponent implements OnInit, OnDestroy {
           .subscribe(
               (response: Project[]) => {
                   this.projects = response;
+                      this.projects.sort((a: Project, b: Project) => b.id - a.id);
+
                   this.project = this.projects.find(p => p.id.toString() === project_id.toString());
                          // this.projects.sort((a: Project, b: Project) => b.id - a.id);
                   console.log(this.projects, project_id);
@@ -40,6 +43,8 @@ export class ProjectItemDetailedComponent implements OnInit, OnDestroy {
               },
               // (error: HttpErrorResponse) => console.log(error)
           );
+
+
 
     // this.dsService.getProject(project_id).subscribe((projects: Project[]) => {
     //   console.log(projects);
