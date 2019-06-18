@@ -27,16 +27,11 @@
   <div class="col-12 column">  
     <h2 class="text-center overview"> My Projects </h2>
   </div>
-  
-    <app-project-item-short class="col-12 column" *ngFor="let project of projects; let i = index;" [project]="project" [index]="i">
-    </app-project-item-short>
-
-  
-
+  <app-project-item-short class="col-12 column" *ngFor="let project of projects; let i = index;" [project]="project" [index]="i">
+  </app-project-item-short>
 </div>
 <div class="row message-row">
-      <div class="col-12 ">
+  <div class="col-12 ">
     <app-message class="text-center"> </app-message>
   </div>
-
 </div>

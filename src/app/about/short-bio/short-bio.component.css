@@ -1,7 +1,8 @@
 h2 {
 
 	font-family: 'Quicksand',  sans-serif;
-			padding-bottom: 25px;
+			padding-bottom: 15px;
+			padding-top: 50px;
 			font-size: 42px;
 			color: #1c95ce;
 }
@@ -79,7 +80,13 @@ h2 {
 h2 {
 
   font-size: 30px;
+   padding-bottom: 10px;
 		
+}
+
+.description, #skills {
+
+  font-size: 18px;
 }
 
 
@@ -97,7 +104,15 @@ width: 85%;
 h2 {
 
   font-size: 30px;
+  padding-bottom: 10px;
 		
+}
+
+
+
+.description, #skills {
+
+  font-size: 18px;
 }
 
 
@@ -115,7 +130,13 @@ h2 {
 h2 {
 
   font-size: 30px;
+   padding-bottom: 10px;
 		
+}
+
+.description, #skills {
+
+  font-size: 18px;
 }
 
 
