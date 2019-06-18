@@ -1,9 +1,10 @@
 .row-photo {
   position:relative;
   min-height: 500px;
-   max-height: 500px;
+  max-height: 500px;
   margin: 0 auto;
   margin-top: 50px;
+
 }
 
 
@@ -37,18 +38,31 @@
 }
 
  #bio {
-  width: 80%;
-  margin: 0 auto;
+
   font-family: 'Quicksand',  sans-serif;
   font-size: 20px;
 
+}
+
+.projects-row {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.column {
+  padding-top: 30px;
+}
+
+.message-row {
+  padding-bottom: 50px;
+  padding-top: 50px;
 }
 
 .overview {
   color: #1c95ce;
   font-family: 'Quicksand',  sans-serif;
   font-style: 700;
-  font-size: 50px;
+  font-size: 42px;
 }
 
  .short-text { display: none; } 
@@ -78,15 +92,13 @@
 
 }
 
- #bio {
-  width: 85%;
-
-
-}
 
 .overview {
-
     font-size: 45px;
+}
+
+.projects-row {
+  width: 75%;
 }
 
 
@@ -127,7 +139,7 @@
  #bio {
 
   font-size: 16px;
-  width: 80%;
+
 
 }
 .overview {
@@ -135,6 +147,9 @@
     font-size: 35px;
 }
 
+.projects-row {
+  width: 80%;
+}
 
 }
 
@@ -170,7 +185,7 @@
 }
 
  #bio {
-  width: 90%;
+
   font-size: 15px;
 
 }
@@ -178,6 +193,10 @@
 .overview {
 
     font-size: 30px;
+}
+
+.projects-row {
+  width: 85%;
 }
 
 }
@@ -213,7 +232,7 @@
 }
 
  #bio {
-  width: 100%;
+
   font-size: 12px;
 
 }
@@ -222,6 +241,10 @@
 
     font-size: 25px;
 }
+
+.projects-row {
+  width: 85%;
+} 
 
 }
 
@@ -257,7 +280,7 @@
 
 
  #bio {
-  width: 100%;
+
   font-size: 10px;
 
 }
@@ -265,6 +288,10 @@
 .overview {
     font-size: 20px;
 }
+
+.projects-row {
+  width: 85%;
+} 
 
 
 }
@@ -300,7 +327,7 @@
 
 
  #bio {
-  width: 95%;
+
   font-size: 10px;
 
 }
@@ -312,7 +339,14 @@
  .short-text { display: inline-block; }
  .full-text { display: none; }
 
+
+ .projects-row {
+  width: 90%;
+} 
+
 }
+
+
 
 
 

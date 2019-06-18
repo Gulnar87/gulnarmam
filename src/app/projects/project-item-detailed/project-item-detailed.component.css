@@ -1,12 +1,12 @@
 .text-row {
 	margin: 0 auto;
-	width: 75%;
+	width: 70%;
 
 }
 
 .projectName {
    color: #1c95ce ;
-   font-size: 32px;
+   font-size: 42px;
 }
 .projectName, .subtitle, .description {
 
@@ -36,7 +36,11 @@
 /********** Large devices only **********/
 @media (min-width: 992px) and (max-width: 1199px) {
 
+.text-row {
 
+	width: 75%;
+
+}
 
 }
      
@@ -45,7 +49,11 @@
 @media (min-width: 768px) and (max-width: 991px) {
 
 
+.text-row {
 
+	width: 80%;
+
+}
 
 
 
@@ -81,7 +89,7 @@ width: 85%;
 @media (min-width: 380px) and (max-width: 479px) {
 
 .text-row {
-width: 90%;
+width: 85%;
 
 }
 

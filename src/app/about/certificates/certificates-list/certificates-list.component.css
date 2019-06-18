@@ -1,6 +1,14 @@
+h2 {
+
+	font-family: 'Quicksand',  sans-serif;
+			padding-bottom: 25px;
+			font-size: 42px;
+			color: #1c95ce;
+}
+
 .certificates-row {
 	margin: 0 auto;
-	width: 60%;
+	width: 70%;
 	margin-bottom: 50px;
 
 }
@@ -16,13 +24,20 @@
 /********** Large devices only **********/
 @media (min-width: 992px) and (max-width: 1199px) {
 
+.certificates-row {
+	width: 75%;
 
+}
 
 }
      
 /********** Medium devices only **********/
 
 @media (min-width: 768px) and (max-width: 991px) {
+	.certificates-row {
+	width: 80%;
+
+}
 
 
 }
@@ -33,7 +48,7 @@
 
 	.certificates-row {
 
-	width: 80%;
+	width: 85%;
 }
 
 
@@ -45,7 +60,7 @@
 
 	.certificates-row {
 
-	width: 80%;
+	width: 85%;
 }
 
 
@@ -58,7 +73,7 @@
 	
  .certificates-row {
 
-	width: 80%;
+	width: 85%;
 }
 
 
@@ -70,7 +85,7 @@
 
 	.certificates-row {
 
-	width: 80%;
+	width: 90%;
 }
 
 

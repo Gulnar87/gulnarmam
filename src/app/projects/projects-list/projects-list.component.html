@@ -23,17 +23,20 @@
   </div> 
 </div>
 <hr >
-<div class="row">
-  <div class="col-12">  
-    <h2 class="text-center overview pt-4 pb-4"> My Projects </h2>
+<div class="row projects-row">
+  <div class="col-12 column">  
+    <h2 class="text-center overview"> My Projects </h2>
   </div>
-  <div class="col-8 offset-2">
-    <app-project-item-short *ngFor="let project of projects; let i = index;" [project]="project" [index]="i">
+  
+    <app-project-item-short class="col-12 column" *ngFor="let project of projects; let i = index;" [project]="project" [index]="i">
     </app-project-item-short>
-  </div>
+
+  
+
 </div>
-<div class="row">
-  <div class="col-12 pb-4 pt-4">
+<div class="row message-row">
+      <div class="col-12 ">
     <app-message class="text-center"> </app-message>
   </div>
+
 </div>

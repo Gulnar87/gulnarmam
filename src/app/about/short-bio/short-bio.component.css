@@ -1,17 +1,19 @@
-h3 {
-	/*font-family: 'Aladin', cursive;*/
-			font-family: 'Quicksand',  sans-serif;
-			padding-bottom: 30px;
+h2 {
+
+	font-family: 'Quicksand',  sans-serif;
+			padding-bottom: 25px;
+			font-size: 42px;
+			color: #1c95ce;
 }
 
 .description, #skills {
   font-family: 'Quicksand', sans-serif;
-  font-size: 20px;
+  font-size: 21px;
 }
 
 
 .bioRow {
-	width: 75%;
+	width: 70%;
 	margin: 0 auto;
 }
 
@@ -25,7 +27,10 @@ h3 {
 /********** Large devices only **********/
 @media (min-width: 992px) and (max-width: 1199px) {
 
+.bioRow {
+	width: 75%;
 
+}
 
 }
      
@@ -34,7 +39,10 @@ h3 {
 @media (min-width: 768px) and (max-width: 991px) {
 
 
+.bioRow {
+	width: 80%;
 
+}
 
 
 
@@ -58,7 +66,7 @@ width: 85%;
 
 
 .bioRow {
-width: 85%;
+ width: 85%;
 
 }
 
@@ -70,7 +78,7 @@ width: 85%;
 @media (min-width: 380px) and (max-width: 479px) {
 
 .bioRow {
-width: 90%;
+width: 85%;
 
 }
 

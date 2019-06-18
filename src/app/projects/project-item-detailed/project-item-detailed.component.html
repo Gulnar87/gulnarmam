@@ -1,52 +1,29 @@
-
-
-<div class="row pb-4">
-  <div class="col-12 text-center">
+<div class="row">
+  <div class="col-12 columns text-center">
     <img [src]="project.picTop" alt="" class="img-fluid">
   </div>
 </div>
-
-<div class="row text-row pb-4">
-  <div class="col-12">
-    <h1 class="text-center projectName "> {{ project.name}}</h1>
+<div class="row text-row ">
+  <div class="col-12 pb-3">
+    <h2 class="text-center projectName "> {{ project.name}}</h2>
     <h5 class="text-center subtitle"> {{ project.subTitle }}</h5>
   </div>
 </div>
-
 <div class="row text-row ">
   <div class="col-12 columns">
-      <p class="description "> {{ project.description }} </p>
-
-            <p class="description "> Technology used: {{ project.techUsed }} </p>
+    <p class="description "> {{ project.description }} </p>
+    <p class="description "> Technology used: {{ project.techUsed }} </p>
   </div>
-
-
   <div class="col-12 text-center columns" *ngFor="let picture of project.pictures" >
     <img [src]="picture.pic" alt="" class="img-fluid ">
-
   </div>
-
   <div class="col-12 text-center columns" >
- <a mdbBtn color="info" type="button"  [href]="project.linkToPage" target="_blank"> <i class="fas fa-external-link-alt"></i> View online </a>
-
-</div>
-
-
-</div>
-
-
-<!-- <div class="row mb-3">
-  <div class="col-12">
-    <h3> All Projects </h3>
+    <a mdbBtn color="info" type="button"  [href]="project.linkToPage" target="_blank"> 
+      <i class="fas fa-external-link-alt"></i> View online </a>
   </div>
 </div>
 
-<div class="row">
 
-<app-project-item-short class="col-4" *ngFor="let project of projects; let i = index;" [project]="project" [index]="i">
-  
-</app-project-item-short>
 
-</div> -->
 
 
