@@ -51,6 +51,12 @@ h2 {
 	width: 85%;
 }
 
+h2 {
+
+  font-size: 35px;
+		
+}
+
 
 }
 
@@ -63,6 +69,11 @@ h2 {
 	width: 85%;
 }
 
+h2 {
+
+  font-size: 30px;
+		
+}
 
 
 }
@@ -76,6 +87,11 @@ h2 {
 	width: 85%;
 }
 
+h2 {
+
+  font-size: 30px;
+		
+}
 
 
 }
@@ -86,6 +102,11 @@ h2 {
 	.certificates-row {
 
 	width: 90%;
+}
+h2 {
+
+  font-size: 30px;
+		
 }
 
 

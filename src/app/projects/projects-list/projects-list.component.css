@@ -49,13 +49,10 @@
   margin: 0 auto;
 }
 
-.column {
-  padding-top: 30px;
-}
 
 .message-row {
   padding-bottom: 50px;
-  padding-top: 50px;
+  padding-top: 40px;
 }
 
 .overview {
@@ -63,6 +60,8 @@
   font-family: 'Quicksand',  sans-serif;
   font-style: 700;
   font-size: 42px;
+  padding-bottom: 25px;
+  padding-top: 25px;
 }
 
  .short-text { display: none; } 
@@ -92,10 +91,6 @@
 
 }
 
-
-.overview {
-    font-size: 45px;
-}
 
 .projects-row {
   width: 75%;
@@ -142,10 +137,7 @@
 
 
 }
-.overview {
 
-    font-size: 35px;
-}
 
 .projects-row {
   width: 80%;
@@ -192,7 +184,7 @@
 
 .overview {
 
-    font-size: 30px;
+    font-size: 35px;
 }
 
 .projects-row {
@@ -239,7 +231,7 @@
 
 .overview {
 
-    font-size: 25px;
+    font-size: 30px;
 }
 
 .projects-row {
@@ -286,7 +278,7 @@
 }
 
 .overview {
-    font-size: 20px;
+    font-size: 30px;
 }
 
 .projects-row {
@@ -333,7 +325,7 @@
 }
 
 .overview {
-  font-size: 20px;
+  font-size: 30px;
 }
 
  .short-text { display: inline-block; }
