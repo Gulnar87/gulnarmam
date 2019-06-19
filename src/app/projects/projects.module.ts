@@ -7,7 +7,7 @@ import { ProjectItemDetailedComponent } from '../projects/project-item-detailed/
 import { ProjectsListComponent } from '../projects/projects-list/projects-list.component';
 import { MessageComponent } from '../message/message.component';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
-import { SafePipe } from '../app.component';
+
 import { ProjectsRoutingModule } from '../projects/projects-routing.module';
 
 
@@ -19,7 +19,7 @@ import { ProjectsRoutingModule } from '../projects/projects-routing.module';
     ProjectItemDetailedComponent,
     ProjectsListComponent,
     MessageComponent,
-    SafePipe
+
 
 	],
 

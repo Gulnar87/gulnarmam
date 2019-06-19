@@ -7,7 +7,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent} from './app.component';
 import { CoreModule } from './core/core.module';
-import { ProjectsModule } from './projects/projects.module';
+// import { ProjectsModule } from './projects/projects.module';
 import { AboutModule } from './about/about.module'; 
 
 import { ContactComponent } from './contact/contact.component';
@@ -28,7 +28,7 @@ import { ContactComponent } from './contact/contact.component';
     HttpClientModule,
     BrowserAnimationsModule,
     CoreModule,
-    ProjectsModule,
+    // ProjectsModule,
     AboutModule,
 
 

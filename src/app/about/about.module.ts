@@ -13,6 +13,7 @@ import { SwiperModule, SwiperConfigInterface,
   SWIPER_CONFIG } from 'ngx-swiper-wrapper';
 
 import { NgxGalleryModule } from 'ngx-gallery';
+import { CertificatesSwiperComponent } from './certificates/certificates-swiper/certificates-swiper.component';
 
 const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
   observer: true,
@@ -31,7 +32,7 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
      CertificatesListComponent,
      CertificateItemComponent,
      ShortBioComponent,    
-     SkillsComponent
+     SkillsComponent, CertificatesSwiperComponent
     
   ],
  

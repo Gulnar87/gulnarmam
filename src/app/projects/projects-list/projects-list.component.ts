@@ -135,12 +135,11 @@ export class ProjectsListComponent implements OnInit, OnDestroy {
         (projects: Project[]) => {
           this.projects = projects;
           
-             console.log('list1', this.projects)
         }
       );
       
       this.projects = this.pS.getProjects();
-      // console.log('list', this.projects)
+      
   }
 
     ngOnDestroy(){

@@ -19,23 +19,11 @@ export class ProjectsComponent implements OnInit {
 
   ngOnInit() {
 
-  	  this.dsService.getProjects()
-            .subscribe(
-                (response: Project[]) => {
-                    this.projects = response;
-                     // this.projects.sort((a: Project, b: Project) => b.id - a.id);
-                     
-
-                    this.projectService.setProjects(this.projects);
-
-                    // console.log( 'projects', response)  
-                    // console.log('projects', this.projects)              
-                },
-                (error: HttpErrorResponse) => console.log(error)
-            );
+    this.dsService.getProjects().subscribe();
 
   }
 
   
+
 
 }

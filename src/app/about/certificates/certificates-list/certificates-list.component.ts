@@ -23,34 +23,14 @@ export class CertificatesListComponent implements OnInit {
   constructor(private certificateService: CertificateService,   private route: ActivatedRoute, private dsService: DataStorageService) { }
 
 
-
-
     ngOnInit() {
 
-   
- 
-    //   this.subscription = this.certificateService.certificatesChanged
-    // .subscribe(
-    //     (certificates: Certificate[]) => {
-    //       this.certificates = certificates;
-            
-    //           console.log(this.certificates)  
-   
-          
-    //     }
-    //   );
-      
-    //   this.certificates = this.certificateService.getCertificates();
-    //       console.log(this.certificates)  
-
-        const project_id = this.route.snapshot.paramMap.get('id');
 
     this.dsService.getCertificates()
           .subscribe(
               (response: Certificate[]) => {
                   this.certificates = response;
-                  // this.certificate = this.certificates.find(p => p.id.toString() === project_id.toString());
-                  console.log(this.certificates, project_id);
+                  this.certificateService.setCertificates(this.certificates);
                   console.log(this.certificate);
               },
               // (error: HttpErrorResponse) => console.log(error)
@@ -58,9 +38,6 @@ export class CertificatesListComponent implements OnInit {
       
   }
 
-    ngOnDestroy(){
-    // this.subscription.unsubscribe();
-  }
 
   
 
