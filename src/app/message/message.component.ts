@@ -16,7 +16,7 @@ export class MessageComponent implements OnInit {
   speed: 50,
   cursor: false,
   loop: true,
-  waitUntilVisible: true
+   waitUntilVisible: true
 })
 .type('Well, are you already hooked')
 .pause(500)
@@ -24,7 +24,7 @@ export class MessageComponent implements OnInit {
 .type('interested? ')
 .pause(1000)
 .break()
-.type('Email  me: <a href="mailto:gulnar_mammadova@yahoo.com">gulnar_mammadova@yahoo.com</a> ')
+.type('Email  me: <a href="mailto:gulnar_mammadova@yahoo.com" class="font-weight-bold" style="color: #ffff;">gulnar_mammadova@yahoo.com</a> ')
 .pause(1000)
 .break()
 .pause(750)

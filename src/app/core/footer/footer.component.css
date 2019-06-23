@@ -1,3 +1,5 @@
+
+
 .row{
 	  font-family: 'Quicksand', sans-serif;
 }
@@ -28,6 +30,18 @@
 .list-inline-item {
 	padding-right: 30px;
     font-size: 20px;
+}
+
+
+.bottom-footer {
+
+ width: 75%;
+ margin: 0 auto;
+   color: #f9f9f9;
+}
+
+.web-dev {
+  color: white;
 }
 
 /********** Extra Large devices only **********/

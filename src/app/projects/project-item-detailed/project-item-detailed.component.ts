@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, OnDestroy} from '@angular/core';
+import { Component, OnInit, Input} from '@angular/core';
 import { ActivatedRoute, Params, Router} from '@angular/router';
 import { Subscription } from 'rxjs';
 import { ProjectService } from '../../projects/project.service';
@@ -11,7 +11,7 @@ import { DataStorageService } from '../../shared/dataStorage.service';
   templateUrl: './project-item-detailed.component.html',
   styleUrls: ['./project-item-detailed.component.css']
 })
-export class ProjectItemDetailedComponent implements OnInit, OnDestroy {
+export class ProjectItemDetailedComponent implements OnInit {
   subscription: Subscription;
 	id: number; 
 	projects: Project[] ;
@@ -51,12 +51,6 @@ export class ProjectItemDetailedComponent implements OnInit, OnDestroy {
         }
       );
   }
-
-   ngOnDestroy(){
-    // this.subscription.unsubscribe();
-  }
-
-
 
 
 }

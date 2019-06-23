@@ -21,8 +21,6 @@ export class CertificatesComponent implements OnInit {
    certificates: Certificate[] = [];
 
 
-
-
   constructor(private certificateService: CertificateService,
     private dsService: DataStorageService,  private route: ActivatedRoute) { }
 
