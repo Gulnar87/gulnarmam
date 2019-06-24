@@ -14,8 +14,16 @@ h2 {
 
 
 .bioRow {
-	width: 70%;
+	width: 80%;
 	margin: 0 auto;
+}
+
+.list-inline-item {
+	background-color: #1c95ce;
+	margin-bottom: 5px;
+	margin-right: 5px;
+	padding: 10px;
+	color: white;
 }
 
 /********** Extra Large devices only **********/

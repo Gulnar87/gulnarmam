@@ -17,9 +17,12 @@
 
 
 <!-- Card Light -->
-<div class="card mb-5 hoverable animated slideInUp wow">
-    <div class="waves-light" mdbWavesEffect>
-        <img class="card-img-top" [src]="project.picHome" alt="Card image cap">
+<div class="column mb-5 hoverable animated slideInUp wow">
+    <div class="waves-light view overlay  zoom" mdbWavesEffect>
+        <img class="card-img-top img-fluid" [src]="project.picHome" alt="Card image cap" width="1024" height="428">
+         <div class="mask flex-center">
+    
+    </div>
     </div>
     <div class="card-body">
         <h4 class="card-title">{{ project.name }} </h4>

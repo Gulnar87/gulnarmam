@@ -36,8 +36,14 @@
 }
 
 .less {
-  max-height: 60px;
+  max-height: 50px;
 }
+
+.column {
+  border: 1px solid #cccc;
+  background-color: #f9f9f9;
+}
+
 
 /********** Extra Large devices only **********/
 @media (min-width: 1200px) {
