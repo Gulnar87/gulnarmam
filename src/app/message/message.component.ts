@@ -36,7 +36,7 @@ export class MessageComponent implements OnInit {
 .break()
 .pause(750)
 .delete()
-.type('Then, navigate to  <strong> About section </strong>')
+.type('Then, navigate to  <a class="font-weight-bold" routerLink="/about" > About section </a>')
 .options({speed: 700})
 .type('...')
 .pause(750)

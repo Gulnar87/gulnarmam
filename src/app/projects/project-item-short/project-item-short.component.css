@@ -27,6 +27,18 @@
 	color: #c40909;
 }
 
+.content {
+  width: 100%;
+  overflow: hidden;
+  word-wrap: break-word;
+  text-overflow: ellipsis;
+
+}
+
+.less {
+  max-height: 60px;
+}
+
 /********** Extra Large devices only **********/
 @media (min-width: 1200px) {
 
