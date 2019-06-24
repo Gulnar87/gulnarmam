@@ -16,7 +16,7 @@ export class MessageComponent implements OnInit {
   speed: 50,
   cursor: false,
   loop: true,
-   waitUntilVisible: true
+  waitUntilVisible: true,
 })
 .type('Well, are you already hooked')
 .pause(500)
