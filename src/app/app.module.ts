@@ -22,7 +22,7 @@ import { ContactComponent } from './contact/contact.component';
   ],
 
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({appId: 'gulnarmam'}),
     AppRoutingModule,  
     FormsModule,
     HttpClientModule,

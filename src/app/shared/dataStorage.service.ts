@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 
 import { map, tap, take, exhaustMap } from 'rxjs/operators';
-import { environment } from 'src/environments/environment';
+import { environment } from '../../environments/environment';
 import { Certificate, Root } from '../about/certificates/certificate.model';
 import { Project} from '../projects/project.model';
 
