@@ -112,17 +112,17 @@ export class ProjectsListComponent implements OnInit, OnDestroy {
    faArrowDown = faArrowDown;
 
   photos = [
-  { img: "assets/gul1.JPG"
+  { img: "assets/gulnar-1.jpg"
     
   },
 
   {
-  img: "assets/gul2.JPG"
+  img: "assets/gulnar-2.jpg"
 
   },
 
   {
-   img: "assets/gul3.JPG"
+   img: "assets/gulnar-3.jpg"
 
   }
 ]

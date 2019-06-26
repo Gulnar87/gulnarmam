@@ -1,8 +1,8 @@
 <div class="row row-photo">
 	<div class="col-xl-5 col-lg-6 col-md-5 col-sm-5 col-5 col-pic">
 		<div  [@photosAnimation]="photos.length" id="profile">
-			<div *ngFor="let photo of photos" id="profile-pic" alt="Gulnar Mammadova">
-				<img  [src]="photo.img" class="img-fluid" style="border-radius: 50%;">
+			<div *ngFor="let photo of photos" class="profile-pic">
+				<img  [src]="photo.img" class="img-fluid" alt="Gulnar Mammadova" style="border-radius: 50%;">
 			</div>
 		</div>	
   </div>
