@@ -1,9 +1,7 @@
-.fa-envelope-open, .fa-github {
+.fa-envelope-open, .fa-github, .fa-linkedin-in, .fa-youtube {
   font-size: 18px;
 }
-fa-icon {
-	font-size: 18px;
-}
+
 
 #header {
 	margin-bottom: 80px;
