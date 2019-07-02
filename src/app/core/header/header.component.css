@@ -38,7 +38,7 @@
  .navbar-nav .nav-link:hover {
   text-decoration: none;
   font-weight: bold;
-  color: #1c95ce !important;
+  color: #4772B7 !important;
   cursor: pointer;
 }
 
@@ -65,7 +65,7 @@
 }
 
 #social-icons a:hover {
-   color: #1c95ce;
+   color: #4772B7;
    box-shadow: none;
 }
 

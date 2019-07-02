@@ -16,7 +16,7 @@
 }
 
 .projectName {
-   color: #1c95ce ;
+   color: #4772B7;
    font-size: 42px;
 }
 
@@ -26,6 +26,11 @@
 
 .description {
 	font-size: 21px;
+}
+
+.button {
+	background-color: #4772B7;
+	color: #ffff;
 }
 
 /********** Extra Large devices only **********/
