@@ -36,6 +36,7 @@
     "@fortawesome/free-brands-svg-icons": "^5.7.2",
     "@fortawesome/free-solid-svg-icons": "^5.7.2",
     "@ng-bootstrap/ng-bootstrap": "^4.1.0",
+    "@nguniversal/common": "^8.1.0",
     "@nguniversal/express-engine": "^7.1.1",
     "@nguniversal/module-map-ngfactory-loader": "^7.1.1",
     "@ngx-gallery/core": "^4.0.2-beta.0",

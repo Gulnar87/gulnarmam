@@ -5,8 +5,11 @@ import {
   RouterStateSnapshot
 } from '@angular/router';
 
+
 import { Project } from './project.model';
 import { DataStorageService } from '../shared/dataStorage.service';
+
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -19,3 +22,10 @@ export class ProjectsResolverService implements Resolve<Project[]> {
     return this.dataStorageService.getProjects();
   }
 }
+
+
+
+
+
+
+

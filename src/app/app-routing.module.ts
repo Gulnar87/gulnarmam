@@ -16,6 +16,8 @@ const routes: Routes = [
 
   { path: '', redirectTo: '/work', pathMatch: 'full'},
     { path: 'work', loadChildren: './projects/projects.module#ProjectsModule' },
+    
+
 
 
  
