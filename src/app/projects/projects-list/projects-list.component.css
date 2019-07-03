@@ -105,17 +105,17 @@
 @media (min-width: 768px) and (max-width: 991px) {
 
 .row-photo {
-  min-height: 400px;
-  max-height: 400px;
+ /* min-height: 400px;
+  max-height: 400px;*/
 
 }
 
 
 #profile-pic img{
 
- min-height: 400px;
- max-height: 400px;
- left: 40px;
+/* min-height: 400px;
+ max-height: 400px;*/
+/* left: 50px;*/
 }
 
 
