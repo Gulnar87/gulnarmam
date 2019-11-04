@@ -14,7 +14,6 @@ import { BrowserModule } from '@angular/platform-browser';
     // The AppServerModule should import your AppModule followed
     // by the ServerModule from @angular/platform-server.
     AppModule,
-    BrowserModule.withServerTransition({ appId: 'gulnarmam' }),
     ServerModule,
     ModuleMapLoaderModule // <-- *Important* to have lazy-loaded routes work
   ],

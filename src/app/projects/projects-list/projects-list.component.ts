@@ -130,7 +130,7 @@ export class ProjectsListComponent implements OnInit, OnDestroy {
   constructor(private pS: ProjectService) { }
 
   ngOnInit() {
-  	  this.subscription = this.pS.projectsChanged
+ this.subscription = this.pS.projectsChanged
   	.subscribe(
         (projects: Project[]) => {
           this.projects = projects;

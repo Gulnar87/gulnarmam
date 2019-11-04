@@ -1,8 +1,5 @@
 {
   "extends": "../tsconfig.json",
-  "angularCompilerOptions": {
-       "entryModule": "./app/app.module#AppModule"
-  },
   "compilerOptions": {
     "outDir": "../out-tsc/app",
     "types": []
