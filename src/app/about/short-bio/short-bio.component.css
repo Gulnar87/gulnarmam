@@ -4,7 +4,7 @@ h2 {
 			padding-bottom: 15px;
 			padding-top: 50px;
 			font-size: 42px;
-			color: #4772B7;
+			color: #1c95ce;
 }
 
 .description, #skills {
@@ -19,7 +19,7 @@ h2 {
 }
 
 .list-inline-item {
-	background-color: #4772B7;
+	background-color: #1c95ce;
 	margin-bottom: 5px;
 	margin-right: 5px;
 	padding: 10px;

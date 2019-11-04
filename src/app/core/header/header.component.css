@@ -38,11 +38,9 @@
  .navbar-nav .nav-link:hover {
   text-decoration: none;
   font-weight: bold;
-  color: #4772B7 !important;
+  color: #1c95ce !important;
   cursor: pointer;
 }
-
-
 
 
 #header-nav .active>.nav-link {
@@ -51,11 +49,9 @@
 
 .navbar.navbar-light .navbar-nav .nav-item.active > .nav-link {
     background-color: transparent;
-
 }
 
 .social-icon{
-
   box-shadow: none;
   color: #434343;
 }
@@ -65,7 +61,7 @@
 }
 
 #social-icons a:hover {
-   color: #4772B7;
+   color: #1c95ce;
    box-shadow: none;
 }
 
@@ -73,14 +69,11 @@
 /********** Extra Large devices only **********/
 @media (min-width: 1200px) {
 
-
 }
 
 
 /********** Large devices only **********/
 @media (min-width: 992px) and (max-width: 1199px) {
-
-
 
 }
      
@@ -88,18 +81,12 @@
 
 @media (min-width: 768px) and (max-width: 991px) {
 
-#header {
-	/*margin-bottom: 70px;*/
-
-}
-
 .navbar-nav  {
 	padding-top: 20px;
 }
 
 
 .logo {
-
 	margin-left: 30px;
 	padding-left: 0;
 	width: 50px;
@@ -118,21 +105,16 @@
 
 
 .nav-item {
-
  margin-left: 35px;
-
 }
+
 .navbar-nav .nav-link {
 	font-size: 18px;
-   
 }
 
 #social-icons {
 	margin-left: 25px;
-
 }
-
-
 }
 
 
@@ -176,7 +158,6 @@
 
 #social-icons {
   margin-left: 10px;
-
 }
 
 }
@@ -213,25 +194,18 @@
 }
 
 .nav-item {
-
 	margin-left: 20px;
-
 }
 
 .navbar-nav .nav-link {
-
   font-size: 16px;
-
 }
 
 
 
 #social-icons {
 	margin-left: 10px;
-	
-
 }
-
 
 }
 
@@ -244,7 +218,6 @@
 }
 
 .logo {
-
 	margin-left: 10px;
 	padding-left: 0;
 	width: 35px;
@@ -267,23 +240,17 @@
 }
 
 .nav-item {
-
 	margin-left: 10px;
-
 }
 
 .navbar-nav .nav-link {
-
 	font-size: 16px;
 
 }
 
 #social-icons {
 	margin-left: 0px;
-	
-
 }
-
 }
 
 /********** iphone 5  **********/
@@ -317,22 +284,14 @@
 }
 
 .navbar-nav .nav-link {
-
 	font-size: 14px;
-
 }
 
 .nav-item {
-
 	margin-left: 10px;
-
 }
 
 #social-icons {
 	margin-left: 0px;
-	
-
 }
-
-
 }

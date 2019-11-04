@@ -1,14 +1,11 @@
 .text-row {
 	margin: 0 auto;
 	width: 80%;
-
 }
 
 
 .projectName, .subtitle, .description {
-
 	font-family: 'Quicksand', sans-serif;
-
 }
 
 .columns {
@@ -16,7 +13,7 @@
 }
 
 .projectName {
-   color: #4772B7;
+   color: #1c95ce;
    font-size: 42px;
 }
 
@@ -29,7 +26,7 @@
 }
 
 .button {
-	background-color: #4772B7;
+	background-color: #1c95ce;
 	color: #ffff;
 }
 
@@ -44,9 +41,7 @@
 @media (min-width: 992px) and (max-width: 1199px) {
 
 .text-row {
-
 	width: 75%;
-
 }
 
 }
@@ -57,12 +52,8 @@
 
 
 .text-row {
-
 	width: 80%;
-
 }
-
-
 
 }
 
@@ -77,9 +68,7 @@ width: 85%;
 }
 
 .projectName {
-
-  font-size: 35px;
-		
+  font-size: 35px;	
 }
 
 }
@@ -117,14 +106,11 @@ width: 85%;
 @media (min-width: 380px) and (max-width: 479px) {
 
 .text-row {
-width: 85%;
-
+  width: 85%;
 }
 
 .projectName {
-
-  font-size: 30px;
-		
+  font-size: 30px;		
 }
 
 .subtitle {
@@ -144,14 +130,10 @@ width: 85%;
 
 .text-row {
 	width: 90%;
-
-
 }
 
 .projectName {
-
-  font-size: 30px;
-		
+  font-size: 30px;	
 }
 
 
@@ -162,7 +144,6 @@ width: 85%;
 .description {
 	font-size: 18px;
 }
-
 
 
 }

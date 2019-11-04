@@ -8,7 +8,7 @@
 
 .menu a:hover {
   text-decoration: none;
-  color: #4772B7;
+  color: #1c95ce;
   cursor: pointer;
 }
 
@@ -18,7 +18,7 @@
 }
 
 .social-icons a:hover {
-   color: #4772B7;;
+   color: #1c95ce;
    box-shadow: none;
 
 }
@@ -49,14 +49,11 @@ color: #f9f9f9;
 /********** Extra Large devices only **********/
 @media (min-width: 1200px) {
 
-
 }
 
 
 /********** Large devices only **********/
 @media (min-width: 992px) and (max-width: 1199px) {
-
-
 
 }
      
@@ -64,29 +61,17 @@ color: #f9f9f9;
 
 @media (min-width: 768px) and (max-width: 991px) {
 
-
-
-
-
-
 }
 
 
 /********** Small devices only **********/
 @media (min-width: 576px) and (max-width: 767px) {
 
-
-
-
 }
 
 
 /********** Extra Small Devices Only **********/
 @media (min-width: 480px) and  (max-width: 575px) {
-
-
-
-
 
 }
 
