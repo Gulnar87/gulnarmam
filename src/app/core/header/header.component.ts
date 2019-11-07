@@ -21,6 +21,8 @@ export class HeaderComponent implements OnInit {
 
   faPhone = faPhone;
 
+  navbarOpen = false;
+
 
  isCollapsed = false;
 
@@ -31,6 +33,11 @@ export class HeaderComponent implements OnInit {
   new TypeIt('.about', {
   cursor: false,
   }).go();
+}
+
+
+toggleNavbar() {
+  this.navbarOpen = !this.navbarOpen;
 
 
 }

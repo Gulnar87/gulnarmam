@@ -4,16 +4,16 @@
       <img src="assets/logoGM4.png" class="logo" alt="Gulnar Mammadova logo" >
       <span class="myName ">Gulnar Mammadova</span> 
     </a>
-    <button (click)="isCollapsed = !isCollapsed"  
+    <button (click)="toggleNavbar()"
          [attr.aria-expanded]="!isCollapsed" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsable-nav" aria-controls="collapsable-nav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button> 
-    <div class="collapse navbar-collapse" id="collapsable-nav" [ngbCollapse]="!isCollapsed" >
+    <div class="collapse navbar-collapse" id="collapsable-nav" [ngClass]="navbarOpen ? 'show' : 'collapse'">
       <ul class="navbar-nav ml-auto menu">
         <li class="nav-item"  routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
-          <a class="nav-link about"  [routerLink]="['/', 'work']" > Work   </a>
+          <a class="nav-link about"  [routerLink]="['/', 'work']" (click)="toggleNavbar()"> Work   </a>
         </li> 
-        <li class="nav-item"  routerLinkActive="active" >
+        <li class="nav-item"  routerLinkActive="active" (click)="toggleNavbar()">
           <a class="nav-link about"  [routerLink]="['/', 'about']" > About </a>
         </li>
       </ul>

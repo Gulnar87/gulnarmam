@@ -5,11 +5,11 @@ import { ProjectService } from '../../projects/project.service';
 import { Project, Root, Pictures } from '../project.model';
 import { DataStorageService } from '../../shared/dataStorage.service';
 
-
 @Component({
   selector: 'app-project-item-detailed',
   templateUrl: './project-item-detailed.component.html',
-  styleUrls: ['./project-item-detailed.component.css']
+  styleUrls: ['./project-item-detailed.component.css'],
+
 })
 export class ProjectItemDetailedComponent implements OnInit {
   subscription: Subscription;
@@ -17,6 +17,7 @@ export class ProjectItemDetailedComponent implements OnInit {
 	projects: Project[] ;
   project: Project;
   pictures: Pictures[]
+
    
 	
 
@@ -24,6 +25,8 @@ export class ProjectItemDetailedComponent implements OnInit {
     private route: ActivatedRoute,
     private router: Router,
     private dsService: DataStorageService) { }
+
+
 
   ngOnInit() {
 
