@@ -11,6 +11,8 @@ import { CoreModule } from './core/core.module';
 import { AboutModule } from './about/about.module'; 
 
 import { ContactComponent } from './contact/contact.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 
 
@@ -31,6 +33,7 @@ import { ContactComponent } from './contact/contact.component';
     CoreModule,
     // ProjectsModule,
     AboutModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
 
 
 
