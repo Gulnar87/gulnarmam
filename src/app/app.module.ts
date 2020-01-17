@@ -7,18 +7,18 @@ import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent} from './app.component';
 import { CoreModule } from './core/core.module';
-// import { ProjectsModule } from './projects/projects.module';
-import { AboutModule } from './about/about.module'; 
-
-import { ContactComponent } from './contact/contact.component';
-
-
-
+import { ProjectsListComponent } from './projects/projects-list/projects-list.component';
+import { ProjectItemShortComponent } from './projects/project-item-short/project-item-short.component';
+import { MessageComponent } from './message/message.component';
+import { ProjectsComponent } from './projects/projects.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ContactComponent,
+    ProjectsListComponent,
+    ProjectItemShortComponent,
+    MessageComponent,
+    ProjectsComponent,
  
   ],
 
@@ -29,10 +29,7 @@ import { ContactComponent } from './contact/contact.component';
     HttpClientModule,
     BrowserAnimationsModule,
     CoreModule,
-    // ProjectsModule,
-    AboutModule,
-
-
+  
 
   ],
   providers: [ ],

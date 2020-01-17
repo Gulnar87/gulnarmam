@@ -5,12 +5,11 @@ import { CertificatesListComponent } from '../about/certificates/certificates-li
 
 
 
-import { ProjectsResolverService } from '../projects/projects-resolver.service';
-
-
 const aboutRoutes: Routes = [
-   { path: 'about', component: AboutComponent},
-    { path: 'certificates', component: CertificatesListComponent}
+   { path: '', component: AboutComponent},
+	{ path: 'certificates', component: CertificatesListComponent}
+
+
 
 ];
 
