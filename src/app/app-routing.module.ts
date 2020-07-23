@@ -4,6 +4,7 @@ import { ProjectsListComponent } from './projects/projects-list/projects-list.co
 import { ProjectsComponent } from './projects/projects.component';
 import { ProjectItemDetailedComponent } from './projects/project-item-detailed/project-item-detailed.component';
 import { ProjectsResolverService } from './projects/projects-resolver.service';
+import { BlogComponent } from './blog/blog.component';
 
 const routes: Routes = [
  { path: '', component: ProjectsComponent, children:[
@@ -12,6 +13,7 @@ const routes: Routes = [
       ] },
 
     { path: 'about', loadChildren: './about/about.module#AboutModule' },
+    { path: 'blog', component: BlogComponent },
     
 ];
 

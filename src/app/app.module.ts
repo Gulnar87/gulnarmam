@@ -11,6 +11,7 @@ import { ProjectsListComponent } from './projects/projects-list/projects-list.co
 import { ProjectItemShortComponent } from './projects/project-item-short/project-item-short.component';
 import { MessageComponent } from './message/message.component';
 import { ProjectsComponent } from './projects/projects.component';
+import { BlogComponent } from './blog/blog.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { ProjectsComponent } from './projects/projects.component';
     ProjectItemShortComponent,
     MessageComponent,
     ProjectsComponent,
+    BlogComponent,
  
   ],
 
