@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
+// import {FacebookModule} from 'ngx-facebook';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent} from './app.component';
 import { CoreModule } from './core/core.module';
@@ -31,8 +32,8 @@ import { BlogComponent } from './blog/blog.component';
     HttpClientModule,
     BrowserAnimationsModule,
     CoreModule,
+    // FacebookModule.forRoot(),
   
-
   ],
   providers: [ ],
   bootstrap: [AppComponent]
