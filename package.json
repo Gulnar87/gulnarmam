@@ -1,15 +1,20 @@
 {
   "name": "gulnarmam",
   "version": "0.0.0",
-  "scripts": {
-    "ng": "ng",
-    "start": "node server.js",
-    "build": "ng build --prod",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e",
-    "postinstall": "ng build --prod"
-  },
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "test": "ng test",
+    "lint": "ng lint",
+    "e2e": "ng e2e",
+    "start:heroku": "node dist/server",
+    "postinstall": "npm run build:ssr",
+    "build:ssr": "npm run build:client-and-server-bundles && npm run webpack:server",
+    "serve:ssr": "node dist/server.js",
+    "build:client-and-server-bundles": "ng build --prod && ng run gulnarmam:server",
+    "webpack:server": "webpack --config webpack.server.config.js --progress --colors"
+  },
   "private": true,
   "dependencies": {
     "@angular-devkit/build-angular": "^0.13.0",
