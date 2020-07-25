@@ -1,7 +1,7 @@
 import { Component, Pipe, PipeTransform,  OnInit } from '@angular/core';
 import { filter, map, mergeMap } from 'rxjs/operators';
 import { Router, NavigationEnd, ActivatedRoute } from '@angular/router';
-import { SEOService } from './seo.service';
+import { MetaTagService } from './meta-tags.service';
 
 declare var gtag;
 
@@ -17,7 +17,7 @@ export class AppComponent implements OnInit {
 
   constructor(private router: Router,  
     private activatedRoute: ActivatedRoute,
-    private seoService: SEOService) {
+    private metaTagService: MetaTagService) {
     const navEndEvents = router.events.pipe(
       filter(
         event => event instanceof NavigationEnd
@@ -46,10 +46,15 @@ export class AppComponent implements OnInit {
        mergeMap((route) => route.data)
       )
       .subscribe((event) => {
-        this.seoService.updateTitle(event['title']);
-        this.seoService.updateOgUrl(event['ogUrl']);
-        //Updating Description tag dynamically with title
-        this.seoService.updateDescription(event['title'] + event['description'])
+        this.metaTagService.setTitle(event['title']);
+        this.metaTagService.setSocialMediaTags(
+           event['ogUrl'], 
+           event['title'],
+           event['description'],
+           "https://firebasestorage.googleapis.com/v0/b/data-certificates.appspot.com/o/Website%20Pictures%2Fgm-logo.jpg?alt=media&token=0c5aab1f-08d1-4c71-b362-8922db264d0e,"
+  
+          );
+
       }); 
     }
 
