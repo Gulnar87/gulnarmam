@@ -18,11 +18,11 @@ const routes: Routes = [
       ]},
 
     { path: 'about', loadChildren: './about/about.module#AboutModule',
-    data: {
-      ogUrl: 'www.gulnarmammadova.com/about',
-      title: 'About',
-      description:'I develop user-friendly and dynamic Single Page Applications (SPA) using front end JavaScript framework Angular'
-    }  
+    // data: {
+    //   ogUrl: 'www.gulnarmammadova.com/about',
+    //   title: 'About',
+    //   description:'I develop user-friendly and dynamic Single Page Applications (SPA) using front end JavaScript framework Angular'
+    // }  
   },
     { path: 'blog', component: BlogComponent,
     data: {
