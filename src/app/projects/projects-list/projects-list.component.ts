@@ -139,15 +139,7 @@ export class ProjectsListComponent implements OnInit, OnDestroy {
         }
       );
       
-      this.projects = this.pS.getProjects();
-
-
-      this.metaTagService.setSocialMediaTags(
-        "www.gulnarmammadova.com", 
-        "Gulnar's portfolio",
-        "Portfolio of Gulnar Mammadova, a web developer based in the Hague, the Netherlands.",
-        "");
-      
+      this.projects = this.pS.getProjects();      
   }
 
     ngOnDestroy(){
