@@ -31,10 +31,7 @@ export class ProjectItemDetailedComponent implements OnInit {
 
   ngOnInit() {
 
-    this.seoService.updateTitle(this.project.subTitle);
-    // this.seoService.updateOgUrl(this.project);
-    //Updating Description tag dynamically with title
-    this.seoService.updateDescription(this.project.description);
+
 
         this.route.params
       .subscribe(
@@ -43,6 +40,12 @@ export class ProjectItemDetailedComponent implements OnInit {
           this.project = this.projectService.getProject(this.id);
         }
       );
+
+
+      this.seoService.updateTitle(this.project.subTitle);
+      // this.seoService.updateOgUrl(this.project);
+      //Updating Description tag dynamically with title
+      this.seoService.updateDescription(this.project.description);
   }
 
 }

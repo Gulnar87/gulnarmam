@@ -15,7 +15,6 @@ export class ProjectsComponent implements OnInit {
   constructor(private dsService: DataStorageService) { }
 
   ngOnInit() {
-
     this.dsService.getProjects().subscribe();
 
   }

@@ -9,6 +9,7 @@ import { FooterComponent } from './footer/footer.component';
 import { CertificateService } from '../about/certificates/certificate.service';
 import { ProjectService } from '../projects/project.service';
 import { DataStorageService } from '../shared/dataStorage.service';
+import { SEOService } from '../seo.service';
 
 
 
@@ -34,7 +35,7 @@ import { DataStorageService } from '../shared/dataStorage.service';
 
 	],
 
-	providers: [CertificateService, ProjectService, DataStorageService],
+	providers: [CertificateService, ProjectService, DataStorageService, SEOService],
 
 })
 

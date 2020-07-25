@@ -18,4 +18,8 @@ export class SEOService {
     this.meta.updateTag({ name: 'description', content: desc })
   }
 
+
+  // updateImage(img: ) {
+  //   this.meta.updateTag({ name: 'og:image', content: img })
+  // }
 }
