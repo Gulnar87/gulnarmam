@@ -5,7 +5,8 @@ import { ProjectsResolverService } from '../projects/projects-resolver.service';
 
 
 const projectRoutes: Routes = [
-   {path: ':id', component: ProjectItemDetailedComponent, resolve: [ProjectsResolverService] }
+   {path: ':id', component: ProjectItemDetailedComponent, resolve: [ProjectsResolverService]
+}
 ];
 
 

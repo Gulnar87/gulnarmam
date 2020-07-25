@@ -1,10 +1,8 @@
-import { Component, OnInit, Input} from '@angular/core';
-import { ActivatedRoute, Params, Router} from '@angular/router';
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Params} from '@angular/router';
 import { Subscription } from 'rxjs';
 import { ProjectService } from '../../projects/project.service';
-import { Project, Root, Pictures } from '../project.model';
-import { DataStorageService } from '../../shared/dataStorage.service';
-import { SEOService } from 'src/app/seo.service';
+import { Project, Pictures } from '../project.model';
 
 @Component({
   selector: 'app-project-item-detailed',
@@ -20,20 +18,12 @@ export class ProjectItemDetailedComponent implements OnInit {
   pictures: Pictures[]
 
    
-	
-
   constructor(private projectService: ProjectService, 
-    private route: ActivatedRoute,
-    private router: Router,
-    private dsService: DataStorageService, private seoService: SEOService) { }
-
+    private route: ActivatedRoute) { }
 
 
   ngOnInit() {
-
-
-
-        this.route.params
+      this.route.params
       .subscribe(
         (params: Params) => {
           this.id = +params['id'];
@@ -41,11 +31,6 @@ export class ProjectItemDetailedComponent implements OnInit {
         }
       );
 
-
-      // this.seoService.updateTitle(this.project.name);
-      // this.seoService.updateImage(this.project.picHome);
-      // //Updating Description tag dynamically with title
-      // this.seoService.updateDescription(this.project.description);
   }
 
 }

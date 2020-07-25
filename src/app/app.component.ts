@@ -1,6 +1,7 @@
 import { Component, Pipe, PipeTransform,  OnInit } from '@angular/core';
-import { filter } from 'rxjs/operators';
-import { Router, NavigationEnd } from '@angular/router';
+import { filter, map, mergeMap } from 'rxjs/operators';
+import { Router, NavigationEnd, ActivatedRoute } from '@angular/router';
+import { SEOService } from './seo.service';
 
 declare var gtag;
 
@@ -12,10 +13,11 @@ declare var gtag;
 })
 
 
+export class AppComponent implements OnInit {
 
-export class AppComponent  {
-
-  constructor(router: Router) {
+  constructor(private router: Router,  
+    private activatedRoute: ActivatedRoute,
+    private seoService: SEOService) {
     const navEndEvents = router.events.pipe(
       filter(
         event => event instanceof NavigationEnd
@@ -31,5 +33,24 @@ export class AppComponent  {
     );
   }
 
+
+  ngOnInit() {
+    this.router.events.pipe(
+       filter((event) => event instanceof NavigationEnd),
+       map(() => this.activatedRoute),
+       map((route) => {
+         while (route.firstChild) route = route.firstChild;
+         return route;
+       }),
+       filter((route) => route.outlet === 'primary'),
+       mergeMap((route) => route.data)
+      )
+      .subscribe((event) => {
+        this.seoService.updateTitle(event['title']);
+        this.seoService.updateOgUrl(event['ogUrl']);
+        //Updating Description tag dynamically with title
+        this.seoService.updateDescription(event['title'] + event['description'])
+      }); 
+    }
 
 }

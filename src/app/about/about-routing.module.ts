@@ -7,7 +7,12 @@ import { CertificatesListComponent } from '../about/certificates/certificates-li
 
 const aboutRoutes: Routes = [
    { path: '', component: AboutComponent},
-	{ path: 'certificates', component: CertificatesListComponent}
+	{ path: 'certificates', component: CertificatesListComponent,
+	data: {
+		title: 'Certificates',
+		description:'I constantly update my technical skills',
+		ogUrl: 'www.gulnarmammadova.com/about/certificates'
+	  } }
 
 
 
