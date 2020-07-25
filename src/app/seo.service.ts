@@ -19,7 +19,7 @@ export class SEOService {
   }
 
 
-  // updateImage(img: ) {
-  //   this.meta.updateTag({ name: 'og:image', content: img })
-  // }
+  updateImage(img:string ) {
+    this.meta.updateTag({ name: 'og:image', content: img })
+  }
 }

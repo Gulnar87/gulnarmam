@@ -42,10 +42,10 @@ export class ProjectItemDetailedComponent implements OnInit {
       );
 
 
-      this.seoService.updateTitle(this.project.subTitle);
-      // this.seoService.updateOgUrl(this.project);
-      //Updating Description tag dynamically with title
-      this.seoService.updateDescription(this.project.description);
+      // this.seoService.updateTitle(this.project.name);
+      // this.seoService.updateImage(this.project.picHome);
+      // //Updating Description tag dynamically with title
+      // this.seoService.updateDescription(this.project.description);
   }
 
 }

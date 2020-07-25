@@ -9,11 +9,21 @@ import { BlogComponent } from './blog/blog.component';
 const routes: Routes = [
  { path: '', component: ProjectsComponent, children:[
      { path: '', component: ProjectsListComponent },
-     { path: 'work', loadChildren: './projects/projects.module#ProjectsModule' },
+     { path: 'work', loadChildren: './projects/projects.module#ProjectsModule'},
       ] },
 
-    { path: 'about', loadChildren: './about/about.module#AboutModule' },
-    { path: 'blog', component: BlogComponent },
+    { path: 'about', loadChildren: './about/about.module#AboutModule',
+    data: {
+      title: 'About',
+      description:'About me ',
+      ogUrl: 'www.gulnarmammadova.com'
+    }  },
+    { path: 'blog', component: BlogComponent,
+    data: {
+      title: 'Blog',
+      description:'My blog ',
+      ogUrl: 'www.gulnarmammadova.com'
+    }},
     
 ];
 
