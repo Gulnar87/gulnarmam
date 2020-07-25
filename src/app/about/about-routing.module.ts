@@ -10,9 +10,11 @@ const aboutRoutes: Routes = [
 	{ path: 'certificates', component: CertificatesListComponent,
 	data: {
 		title: 'Certificates',
+		
 		description:'I constantly update my technical skills',
 		ogUrl: 'www.gulnarmammadova.com/about/certificates'
-	  } }
+	  } 
+	}
 
 
 

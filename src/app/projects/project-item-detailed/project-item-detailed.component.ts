@@ -38,7 +38,6 @@ export class ProjectItemDetailedComponent implements OnInit {
         this.project.name,
         this.project.description,
         this.project.picHome);
-
   }
 
 }

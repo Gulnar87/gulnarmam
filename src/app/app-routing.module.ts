@@ -13,12 +13,7 @@ const routes: Routes = [
       description:'Portfolio of Gulnar Mammadova, a web developer based in the Hague, the Netherlands.'  
           } 
      },
-     { path: 'work', loadChildren: './projects/projects.module#ProjectsModule',
-     data: {
-      ogUrl: 'www.gulnarmammadova.com',
-      title: 'Gulnar\'s portfolio',
-      description:'Portfolio of Gulnar Mammadova, a web developer based in the Hague, the Netherlands.'
-    }},
+     { path: 'work', loadChildren: './projects/projects.module#ProjectsModule'},
 
       ]},
 
@@ -27,7 +22,8 @@ const routes: Routes = [
       ogUrl: 'www.gulnarmammadova.com/about',
       title: 'About',
       description:'I develop user-friendly and dynamic Single Page Applications (SPA) using front end JavaScript framework Angular'
-    }  },
+    }  
+  },
     { path: 'blog', component: BlogComponent,
     data: {
       ogUrl: 'www.gulnarmammadova.com/blog',

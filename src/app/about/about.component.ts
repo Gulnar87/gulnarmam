@@ -11,6 +11,7 @@ import {
   group
 } from '@angular/animations';
 import TypeIt from 'typeit';
+import { MetaTagService } from '../meta-tags.service';
 
 
 @Component({
@@ -63,9 +64,19 @@ export class AboutComponent implements OnInit {
   }
 
 
-  constructor() { }
+  constructor(private metaTagService: MetaTagService) { }
 
   ngOnInit() {
+
+    this.metaTagService.setTitle("About");
+    this.metaTagService.setSocialMediaTags(
+      "www.gulnarmammadova.com/about", 
+      "About",
+      "I develop user-friendly and dynamic Single Page Applications (SPA) using front end JavaScript framework Angular",
+      "");
+
+
+  
    
     new TypeIt('#breakLines', {
     speed: 20,

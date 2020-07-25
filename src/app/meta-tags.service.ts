@@ -22,7 +22,7 @@ export class MetaTagService {
   }
 
   public setSocialMediaTags(url: string, title: string, description: string, image: string): void {
-    var imageUrl = `https://mydomain.com/img/${image}`;
+    var imageUrl = `http://gulnarmammadova.com/img/${image}`;
     var tags = [
       new MetaTag(this.urlMeta, url, true),
       new MetaTag(this.titleMeta, title, true),
@@ -37,12 +37,13 @@ export class MetaTagService {
 
   private setTags(tags: MetaTag[]): void {
     tags.forEach(siteTag => {
-      const tag = siteTag.isFacebook ?  this.metaService.getTag(`property='${siteTag.name}'`) : this.metaService.getTag(`name='${siteTag.name}'`);
-      if (siteTag.isFacebook) {
+      // const tag = siteTag.isFacebook ?  this.metaService.getTag(`property='${siteTag.name}'`) : this.metaService.getTag(`name='${siteTag.name}'`);
+      const tag =   this.metaService.getTag(`property='${siteTag.name}'`);
+      // if (siteTag.isFacebook) {
         this.metaService.updateTag({ property: siteTag.name, content: siteTag.value });
-      } else {
-        this.metaService.updateTag({ name: siteTag.name, content: siteTag.value });
-      }
+      // } else {
+      //   this.metaService.updateTag({ name: siteTag.name, content: siteTag.value });
+      // }
     });
   }
 }
