@@ -10,6 +10,7 @@ import { CertificateService } from '../about/certificates/certificate.service';
 import { ProjectService } from '../projects/project.service';
 import { DataStorageService } from '../shared/dataStorage.service';
 import { MetaTagService } from '../meta-tags.service';
+import { Meta } from '@angular/platform-browser';
 
 
 
@@ -35,7 +36,7 @@ import { MetaTagService } from '../meta-tags.service';
 
 	],
 
-	providers: [CertificateService, ProjectService, DataStorageService, MetaTagService],
+	providers: [CertificateService, ProjectService, DataStorageService, MetaTagService, Meta],
 
 })
 

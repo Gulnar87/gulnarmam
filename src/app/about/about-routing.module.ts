@@ -8,9 +8,14 @@ import { CertificatesListComponent } from '../about/certificates/certificates-li
 const aboutRoutes: Routes = [
    { path: '', component: AboutComponent},
 	{ path: 'certificates', component: CertificatesListComponent,
-	data: {
+
+	  data: {
 		title: 'Gulnar\'s portfolio | Certificates',
-	  } 
+		description: 'I constanly improve new skills ',
+		ogTitle: 'Gulnar\'s portfolio | Certificates',
+		ogDescription: 'I constanly improve new skills',
+		ogImage: 'ImagePathForSocialMedia'
+	  }
 	}
 
 ];

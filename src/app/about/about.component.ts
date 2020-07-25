@@ -68,11 +68,11 @@ export class AboutComponent implements OnInit {
 
   ngOnInit() {
 
-    this.metaTagService.setSocialMediaTags(
-      "www.gulnarmammadova.com/about", 
-      "About",
-      "I develop user-friendly and dynamic Single Page Applications (SPA) using front end JavaScript framework Angular",
-      "");
+    // this.metaTagService.setSocialMediaTags(
+    //   "www.gulnarmammadova.com/about", 
+    //   "About",
+    //   "I develop user-friendly and dynamic Single Page Applications (SPA) using front end JavaScript framework Angular",
+    //   "imkkk");
 
    
     new TypeIt('#breakLines', {
