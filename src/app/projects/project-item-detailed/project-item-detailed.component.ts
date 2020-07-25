@@ -46,7 +46,7 @@ export class ProjectItemDetailedComponent implements OnInit {
 
       // if (data.ogTitle) {
 
-        this.titleService.setTitle(this.project.name);
+        this.titleService.setTitle("Gulnar\'s portfolio | " + this.project.name);
 
 
 
