@@ -9,10 +9,10 @@ const aboutRoutes: Routes = [
    { path: '', component: AboutComponent},
 	{ path: 'certificates', component: CertificatesListComponent,
 	data: {
-		title: 'Certificates',
+		title: 'Gulnar\'s portfolio | Certificates',
 		
-		description:'I constantly update my technical skills',
-		ogUrl: 'www.gulnarmammadova.com/about/certificates'
+		// description:'I constantly update my technical skills',
+		// ogUrl: 'www.gulnarmammadova.com/about/certificates'
 	  } 
 	}
 

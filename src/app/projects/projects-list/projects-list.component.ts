@@ -19,6 +19,7 @@ import {
   keyframes,
   group
 } from '@angular/animations';
+import { MetaTagService } from 'src/app/meta-tags.service';
 
 @Component({
   selector: 'app-projects-list',
@@ -127,7 +128,7 @@ export class ProjectsListComponent implements OnInit, OnDestroy {
   }
 ]
 
-  constructor(private pS: ProjectService) { }
+  constructor(private pS: ProjectService, private metaTagService: MetaTagService) { }
 
   ngOnInit() {
  this.subscription = this.pS.projectsChanged
@@ -139,6 +140,13 @@ export class ProjectsListComponent implements OnInit, OnDestroy {
       );
       
       this.projects = this.pS.getProjects();
+
+
+      this.metaTagService.setSocialMediaTags(
+        "www.gulnarmammadova.com", 
+        "Gulnar's portfolio",
+        "Portfolio of Gulnar Mammadova, a web developer based in the Hague, the Netherlands.",
+        "");
       
   }
 

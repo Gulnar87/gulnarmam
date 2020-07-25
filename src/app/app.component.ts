@@ -47,13 +47,13 @@ export class AppComponent implements OnInit {
       )
       .subscribe((event) => {
         this.metaTagService.setTitle(event['title']);
-        this.metaTagService.setSocialMediaTags(
-           event['ogUrl'], 
-           event['title'],
-           event['description'],
-           "https://firebasestorage.googleapis.com/v0/b/data-certificates.appspot.com/o/Website%20Pictures%2Fgm-logo.jpg?alt=media&token=0c5aab1f-08d1-4c71-b362-8922db264d0e,"
+        // this.metaTagService.setSocialMediaTags(
+        //    event['ogUrl'], 
+        //    event['title'],
+        //    event['description'],
+        //    "https://firebasestorage.googleapis.com/v0/b/data-certificates.appspot.com/o/Website%20Pictures%2Fgm-logo.jpg?alt=media&token=0c5aab1f-08d1-4c71-b362-8922db264d0e,"
   
-          );
+        //   );
 
       }); 
     }

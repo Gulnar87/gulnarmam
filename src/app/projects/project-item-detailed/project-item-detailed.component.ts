@@ -32,12 +32,13 @@ export class ProjectItemDetailedComponent implements OnInit {
         }
       );
 
-      this.metaTagService.setTitle(this.project.name)
+      this.metaTagService.setTitle("Gulnar\'s portfolio | " + this.project.name)
       this.metaTagService.setSocialMediaTags(
         'http://gulnarmammadova.com' + 'work' + this.id, 
         this.project.name,
         this.project.description,
-        this.project.picHome);
+        this.project.picHome
+        );
   }
 
 }

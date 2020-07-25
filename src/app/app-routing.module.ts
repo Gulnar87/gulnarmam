@@ -8,9 +8,9 @@ const routes: Routes = [
  { path: '', component: ProjectsComponent, children:[
      { path: '', component: ProjectsListComponent,
      data: {
-      ogUrl: 'www.gulnarmammadova.com',
+      // ogUrl: 'www.gulnarmammadova.com',
       title: 'Gulnar\'s portfolio',
-      description:'Portfolio of Gulnar Mammadova, a web developer based in the Hague, the Netherlands.'  
+      // description:'Portfolio of Gulnar Mammadova, a web developer based in the Hague, the Netherlands.'  
           } 
      },
      { path: 'work', loadChildren: './projects/projects.module#ProjectsModule'},
@@ -18,17 +18,17 @@ const routes: Routes = [
       ]},
 
     { path: 'about', loadChildren: './about/about.module#AboutModule',
-    // data: {
-    //   ogUrl: 'www.gulnarmammadova.com/about',
-    //   title: 'About',
-    //   description:'I develop user-friendly and dynamic Single Page Applications (SPA) using front end JavaScript framework Angular'
-    // }  
+    data: {
+      // ogUrl: 'www.gulnarmammadova.com/about',
+      title: 'Gulnar\'s portfolio | About',
+      // description:'I develop user-friendly and dynamic Single Page Applications (SPA) using front end JavaScript framework Angular'
+    }  
   },
     { path: 'blog', component: BlogComponent,
     data: {
-      ogUrl: 'www.gulnarmammadova.com/blog',
-      title: 'Blog',
-      description:'In my free time I like writing, making youtube videos etc.',
+      // ogUrl: 'www.gulnarmammadova.com/blog',
+      title: 'Gulnar\'s portfolio | Blog',
+      // description:'In my free time I like writing, making youtube videos etc.',
     }},
     
 ];
