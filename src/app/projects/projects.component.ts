@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpErrorResponse } from '@angular/common/http';
-import { Project, Root } from './project.model';
+import { Project } from './project.model';
 import { DataStorageService } from '../shared/dataStorage.service';
-import { ProjectService } from '../projects/project.service';
+
 
 @Component({
   selector: 'app-projects',
@@ -13,17 +12,11 @@ export class ProjectsComponent implements OnInit {
 
   projects: Project[];
 
-
-  constructor(private dsService: DataStorageService,
-    private projectService: ProjectService) { }
+  constructor(private dsService: DataStorageService) { }
 
   ngOnInit() {
 
     this.dsService.getProjects().subscribe();
 
   }
-
-  
-
-
 }

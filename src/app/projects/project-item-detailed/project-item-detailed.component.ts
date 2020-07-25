@@ -4,6 +4,7 @@ import { Subscription } from 'rxjs';
 import { ProjectService } from '../../projects/project.service';
 import { Project, Root, Pictures } from '../project.model';
 import { DataStorageService } from '../../shared/dataStorage.service';
+import { SEOService } from 'src/app/seo.service';
 
 @Component({
   selector: 'app-project-item-detailed',
@@ -24,27 +25,16 @@ export class ProjectItemDetailedComponent implements OnInit {
   constructor(private projectService: ProjectService, 
     private route: ActivatedRoute,
     private router: Router,
-    private dsService: DataStorageService) { }
+    private dsService: DataStorageService, private seoService: SEOService) { }
 
 
 
   ngOnInit() {
 
-    // const project_id = this.route.snapshot.paramMap.get('id');
-
-    // this.dsService.getProjects()
-    //       .subscribe(
-    //           (response: Project[]) => {
-    //               this.projects = response;
-             
-
-    //               this.project = this.projects.find(p => p.id.toString() === project_id.toString());
-                   
-    //               console.log(this.projects, project_id);
-    //               console.log(this.project);
-    //           },
-    //           // (error: HttpErrorResponse) => console.log(error)
-    //       );
+    this.seoService.updateTitle(this.project.subTitle);
+    // this.seoService.updateOgUrl(this.project);
+    //Updating Description tag dynamically with title
+    this.seoService.updateDescription(this.project.description);
 
         this.route.params
       .subscribe(
@@ -54,6 +44,5 @@ export class ProjectItemDetailedComponent implements OnInit {
         }
       );
   }
-
 
 }

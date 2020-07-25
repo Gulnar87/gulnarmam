@@ -1,12 +1,12 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { ProjectService } from '../../projects/project.service';
-import { Project, Root } from '../project.model';
+import { Project } from '../project.model';
 
 import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 import { faTwitter, faFacebookF, faGithub, faLinkedinIn, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons';
 
-import { faEnvelopeOpen, faMapMarkerAlt, faPhone } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelopeOpen, faPhone } from '@fortawesome/free-solid-svg-icons';
 
 import {
   trigger,
