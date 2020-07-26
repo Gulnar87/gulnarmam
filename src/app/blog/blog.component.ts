@@ -15,7 +15,7 @@ export class BlogComponent implements OnInit {
 
 
   public	blogs : Blog[] = [
-    {title: 'Perishing hopes for peace ', image: '../assets/azerbaijan_embassy.jpg'},
+    {title: 'Perishing hopes for peace ', image: 'http://www.gulnarmammadova.com/assets/azerbaijan_embassy.jpg'},
     // {title: '',  image: '' },
   ]
 
