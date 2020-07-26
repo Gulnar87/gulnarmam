@@ -30,7 +30,7 @@ const routes: Routes = [
   },
     { path: 'blog', component: BlogComponent,
     data: {
-      // title: 'Gulnar\'s portfolio | Blog',
+        title: 'Gulnar\'s portfolio | Blog',
       // description: 'In my free time I do blogging ',
       // ogTitle: 'Gulnar\'s portfolio | Blog',
       // ogDescription: 'In my free time I do blogging ',

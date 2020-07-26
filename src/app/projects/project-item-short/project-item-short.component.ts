@@ -1,7 +1,5 @@
 import { Component, OnInit, Input  } from '@angular/core';
-import { Project, Root } from '../project.model';
-
-
+import { Project } from '../project.model';
 
 
 @Component({
@@ -14,13 +12,9 @@ export class ProjectItemShortComponent implements OnInit {
    @Input() project: Project;
    @Input() index: number;
 
-
-
   constructor() { }
 
   ngOnInit() {
-   
-  
 
   }
 

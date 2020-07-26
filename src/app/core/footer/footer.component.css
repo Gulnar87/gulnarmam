@@ -12,9 +12,10 @@
   cursor: pointer;
 }
 
+
 .social-icon {
   box-shadow: none;
-
+  color: #434343;
 }
 
 .social-icons a:hover {

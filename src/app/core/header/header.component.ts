@@ -18,18 +18,14 @@ export class HeaderComponent implements OnInit {
   faInstagram = faInstagram;
   faYoutube = faYoutube;
   faEnvelopeOpen = faEnvelopeOpen;
-
   faPhone = faPhone;
-
   navbarOpen = false;
+  isCollapsed = false;
 
 
- isCollapsed = false;
-
-  constructor() { }
+  constructor() {}
 
   ngOnInit() {
-
   new TypeIt('.about', {
   cursor: false,
   }).go();

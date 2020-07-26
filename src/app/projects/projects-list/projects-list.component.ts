@@ -2,10 +2,8 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { ProjectService } from '../../projects/project.service';
 import { Project } from '../project.model';
-
 import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 import { faTwitter, faFacebookF, faGithub, faLinkedinIn, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons';
-
 import { faEnvelopeOpen, faPhone } from '@fortawesome/free-solid-svg-icons';
 
 import {
@@ -106,23 +104,21 @@ export class ProjectsListComponent implements OnInit, OnDestroy {
   faInstagram = faInstagram;
   faYoutube = faYoutube;
   faEnvelopeOpen = faEnvelopeOpen;
-
   faPhone = faPhone;
-
-   faArrowDown = faArrowDown;
+  faArrowDown = faArrowDown;
 
   photos = [
-  { img: "assets/gulnar-1.jpg"
+  { img: "http://www.gulnarmammadova.com/assets/gulnar-1.jpg"
     
   },
 
   {
-  img: "assets/gulnar-2.jpg"
+  img: "http://www.gulnarmammadova.com/assets/gulnar-2.jpg"
 
   },
 
   {
-   img: "assets/gulnar-3.jpg"
+   img: "http://www.gulnarmammadova.com/assets/gulnar-3.jpg"
 
   }
 ]
