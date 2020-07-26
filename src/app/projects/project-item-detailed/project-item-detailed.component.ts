@@ -3,7 +3,6 @@ import { ActivatedRoute, Params} from '@angular/router';
 import { Subscription } from 'rxjs';
 import { ProjectService } from '../../projects/project.service';
 import { Project, Pictures } from '../project.model';
-import { MetaTagService } from 'src/app/meta-tags.service';
 import { Meta, Title } from '@angular/platform-browser';
 
 @Component({

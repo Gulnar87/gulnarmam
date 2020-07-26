@@ -19,7 +19,6 @@ import {
   keyframes,
   group
 } from '@angular/animations';
-import { MetaTagService } from 'src/app/meta-tags.service';
 
 @Component({
   selector: 'app-projects-list',
@@ -128,7 +127,7 @@ export class ProjectsListComponent implements OnInit, OnDestroy {
   }
 ]
 
-  constructor(private pS: ProjectService, private metaTagService: MetaTagService) { }
+  constructor(private pS: ProjectService) { }
 
   ngOnInit() {
  this.subscription = this.pS.projectsChanged

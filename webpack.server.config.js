@@ -1,12 +1,12 @@
 const path = require('path');
 const webpack = require('webpack');
+
 module.exports = {
   mode: 'none',
   entry: {
     server: './server.ts',
   },
   target: 'node',
-  mode: 'none',
   resolve: { extensions: ['.ts', '.js'] },
   optimization: {
     minimize: false
