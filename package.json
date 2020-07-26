@@ -9,11 +9,11 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "start:heroku": "node dist/server",
-    "postinstall":"npm run build:ssr",
-    "build:ssr":"npm run build:client-and-server-bundles && npm run webpack:server",
-    "serve:ssr":"node dist/server.js",
-    "build:client-and-server-bundles":"ng build --prod && ng run gulnarmam:server",
-    "webpack:server":"webpack --config webpack.server.config.js --progress --colors"
+    "postinstall": " npm run build:ssr",
+    "build:ssr": "npm run build:client-and-server-bundles && npm run webpack:server",
+    "serve:ssr": "node dist/server.js",
+    "build:client-and-server-bundles": "ng build --prod && ng run gulnarmam:server",
+    "webpack:server": "webpack --config webpack.server.config.js --progress --colors"
   },
   "private": true,
   "dependencies": {
@@ -84,7 +84,8 @@
     "ts-node": "~7.0.0",
     "tslint": "~5.11.0",
     "typescript": "~3.2.2",
-    "webpack-cli": "^3.3.5"
+    "webpack-cli": "^3.3.5",
+    "webpack-dev-server": "^3.11.0"
   },
   "engines": {
     "node": "10.16.3",
