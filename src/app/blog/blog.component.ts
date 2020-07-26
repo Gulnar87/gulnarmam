@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Meta } from '@angular/platform-browser';
+import { Blog } from './blog.module';
 // import {FacebookService, InitParams, UIParams, UIResponse} from 'ng b';
 
 @Component({
@@ -8,28 +10,44 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BlogComponent implements OnInit {
 
-  constructor(  ) {
-    // const initParams: InitParams = {
-    //   appId: '463147414387998',
-    //   xfbml: true,
-    //   version: 'v2.8'
-    // };
-    // facebookService.init(initParams);
+  constructor( private metaService: Meta ) {
    }
 
-  ngOnInit() {
+
+  private	blogs : Blog[] = [
+    {title: 'Perishing hopes for peace ', image: '../assets/azerbaijan_embassy.jpg'},
+    // {title: '',  image: '' },
+  ]
+
+  getBlogs(){
+  	return this.blogs.slice();
   }
 
-  // public facebookShare() {
 
-  //   const url = window.location.origin + '/blog/';
-  //   const params: UIParams = {
-  //     href: url,
-  //     method: 'share'
-  //   };
-  //   this.facebookService.ui(params)
-  //     .then((res: UIResponse) => console.log(res))
-  //     .catch((e: any) => console.error(e));
-  // }
+  ngOnInit() {
+
+    this.blogs.forEach((blog)=>{
+      if (blog.title) {
+        this.metaService.updateTag({ property: 'og:title', content: blog.title })
+      } else {
+        this.metaService.removeTag("property='og:title'")
+      }
+
+    if (blog.image) {
+      this.metaService.updateTag({ property: 'og:image', content: blog.image })
+    } else {
+      this.metaService.removeTag("property='og:image'")
+    }
+    })
+
+    // if (this.project.description) {
+    //   this.metaService.updateTag({ property: 'og:description', content:this.project.description })
+    // } else {
+    //   this.metaService.removeTag("property='og:description'")
+    // }
+
+  }
+
+
 
 }

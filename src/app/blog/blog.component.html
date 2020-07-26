@@ -1,9 +1,9 @@
 <div class="container ">
   <div class="row p-md-5 m-md-5 p-2 pb-5 pt-5" style="background-color: #f9f9f9;">
-    <div class="col-12 ">
-      <h2 class="pb-2 text-center" style="color: #1c95ce"> Perishing hopes for peace  </h2>
+    <div class="col-12 " *ngFor="let blog of blogs">
+      <h2 class="pb-2 text-center" style="color: #1c95ce"> {{blog.title}} </h2>
   
-      <img src="../assets/azerbaijan_embassy.jpg" class="img-fluid pb-3 pt-3" alt="azerbaijan_embassy">
+      <img [src]="blog.image" class="img-fluid pb-3 pt-3" alt="azerbaijan_embassy">
       <p class="pb-3 text-right">
          <i><small>Embassy of the Republic of Azerbaijan in The Hague</small></i></p>
       <p>I want to share my side of the story of the war that I  have been exposed to and was part of since my childhood till today. It is neither to accuse one or glorify another!</p>
@@ -31,10 +31,6 @@
 
       <i>Gulnar Mammadova</i>
   
-<!-- <span (click)="facebookShare()" class="share-icon">
-
-</span> -->
-<!-- <i class="fab fa-facebook" style="cursor: pointer;"> </i>  -->
   
     </div>
   </div>
