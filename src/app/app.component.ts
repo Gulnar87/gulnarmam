@@ -1,7 +1,6 @@
-import { Component, Pipe, PipeTransform,  OnInit } from '@angular/core';
-import { filter, map, mergeMap } from 'rxjs/operators';
+import { Component, OnInit } from '@angular/core';
+import { filter } from 'rxjs/operators';
 import { Router, NavigationEnd, ActivatedRoute } from '@angular/router';
-import { MetaTagService } from './meta-tags.service';
 import { Meta, Title } from '@angular/platform-browser';
 
 declare var gtag;
@@ -18,7 +17,7 @@ export class AppComponent implements OnInit {
 
   constructor(private router: Router,  
     private activatedRoute: ActivatedRoute,
-    private metaTagService: MetaTagService, private metaService: Meta, private titleService: Title) {
+    private metaService: Meta, private titleService: Title) {
     const navEndEvents = router.events.pipe(
       filter(
         event => event instanceof NavigationEnd
@@ -34,22 +33,6 @@ export class AppComponent implements OnInit {
     );
   }
 
-
-  // ngOnInit() {
-  //   this.router.events.pipe(
-  //      filter((event) => event instanceof NavigationEnd),
-  //      map(() => this.activatedRoute),
-  //      map((route) => {
-  //        while (route.firstChild) route = route.firstChild;
-  //        return route;
-  //      }),
-  //      filter((route) => route.outlet === 'primary'),
-  //      mergeMap((route) => route.data)
-  //     )
-  //     .subscribe((event) => {
-  //       this.metaTagService.setTitle(event['title']);
-  //     }); 
-  //   }
 
   ngOnInit() {
  

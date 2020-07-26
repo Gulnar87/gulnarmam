@@ -47,8 +47,6 @@ export class ProjectItemDetailedComponent implements OnInit {
 
         this.titleService.setTitle("Gulnar\'s portfolio | " + this.project.name);
 
-
-
         if (this.project.description) {
           this.metaService.updateTag({ name: 'description', content: this.project.description })
         } else {
@@ -68,7 +66,7 @@ export class ProjectItemDetailedComponent implements OnInit {
         // }
 
         if (this.project.name) {
-          this.metaService.updateTag({ property: 'og:title', content: this.project.name })
+          this.metaService.updateTag({ property: 'og:title', content: "Gulnar\'s portfolio | "  + this.project.name })
         } else {
           this.metaService.removeTag("property='og:title'")
         }
@@ -84,9 +82,6 @@ export class ProjectItemDetailedComponent implements OnInit {
         } else {
           this.metaService.removeTag("property='og:image'")
         }
-
- 
-
   }
 
 }

@@ -12,7 +12,7 @@ const routes: Routes = [
       description: 'Portfolio of Gulnar Mammadova, a web developer based in the Hague, the Netherlands.',
       ogTitle: 'Gulnar\'s portfolio',
       ogDescription: 'Portfolio of Gulnar Mammadova, a web developer based in the Hague, the Netherlands.',
-      ogImage: 'ImagePathForSocialMedia'
+      ogImage: 'https://firebasestorage.googleapis.com/v0/b/data-certificates.appspot.com/o/Website%20Pictures%2Fgm-logo.jpg?alt=media&token=0c5aab1f-08d1-4c71-b362-8922db264d0e'
     }
 
      },
@@ -24,8 +24,9 @@ const routes: Routes = [
     data: {
       title: 'Gulnar\'s portfolio | About',
       description: 'I develop user-friendly and dynamic Single Page Applications (SPA) using front end JavaScript framework Angular.',
+      ogTitle: 'Gulnar\'s portfolio | About',
       ogDescription: 'I develop user-friendly and dynamic Single Page Applications (SPA) using front end JavaScript framework Angular.',
-      ogUrl: '/home'
+      // ogUrl: '/home'
     }
   },
     { path: 'blog', component: BlogComponent,
