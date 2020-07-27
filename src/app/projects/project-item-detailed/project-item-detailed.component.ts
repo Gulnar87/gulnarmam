@@ -104,26 +104,26 @@ export class ProjectItemDetailedComponent implements OnInit {
               "sameAs" : "http://www.google.com",
               "logo" : this.project.picHome
             },
-            // "jobLocation": {
-            // "@type": "Place",
-            //   "address": {
-            //   "@type": "PostalAddress",
-            //   "streetAddress": "1600 Amphitheatre Pkwy",
-            //   "addressLocality": ", Mountain View",
-            //   "addressRegion": "CA",
-            //   "postalCode": "94043",
-            //   "addressCountry": "US"
-            //   }
-            // },
-          //  "baseSalary": {
-          //     "@type": "MonetaryAmount",
-          //     "currency": "USD",
-          //     "value": {
-          //       "@type": "QuantitativeValue",
-          //       "value": 40.00,
-          //       "unitText": "HOUR"
-          //     }
-          //   }
+            "jobLocation": {
+            "@type": "Place",
+              "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "1600 Amphitheatre Pkwy",
+              "addressLocality": ", Mountain View",
+              "addressRegion": "CA",
+              "postalCode": "94043",
+              "addressCountry": "US"
+              }
+            },
+           "baseSalary": {
+              "@type": "MonetaryAmount",
+              "currency": "USD",
+              "value": {
+                "@type": "QuantitativeValue",
+                "value": 40.00,
+                "unitText": "HOUR"
+              }
+            }
           
         };
   }
