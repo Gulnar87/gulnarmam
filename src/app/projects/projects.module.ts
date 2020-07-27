@@ -4,6 +4,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ProjectItemDetailedComponent } from '../projects/project-item-detailed/project-item-detailed.component';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { ProjectsRoutingModule } from '../projects/projects-routing.module';
+import { NgxJsonLdModule } from '@ngx-lite/json-ld';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { ProjectsRoutingModule } from '../projects/projects-routing.module';
 	CommonModule,
     FontAwesomeModule,
     MDBBootstrapModule.forRoot(),
-    ProjectsRoutingModule
+    ProjectsRoutingModule,
+    NgxJsonLdModule,
 
 	],
 

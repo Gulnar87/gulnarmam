@@ -13,6 +13,7 @@ import { ProjectItemShortComponent } from './projects/project-item-short/project
 import { MessageComponent } from './message/message.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { BlogComponent } from './blog/blog.component';
+import { NgxJsonLdModule } from '@ngx-lite/json-ld';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { BlogComponent } from './blog/blog.component';
     HttpClientModule,
     BrowserAnimationsModule,
     CoreModule,
+    NgxJsonLdModule,
     // FacebookModule.forRoot(),
   
   ],
