@@ -5,11 +5,13 @@ import { ProjectItemDetailedComponent } from '../projects/project-item-detailed/
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { ProjectsRoutingModule } from '../projects/projects-routing.module';
 import { NgxJsonLdModule } from '@ngx-lite/json-ld';
+import { JsonLdComponent } from '../json-ld/json-ld.component';
 
 
 @NgModule({
 	declarations: [
     ProjectItemDetailedComponent,
+    JsonLdComponent
 	],
 
 	imports: [
