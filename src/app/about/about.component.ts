@@ -76,12 +76,12 @@ export class AboutComponent implements OnInit {
   }).go();
 
 
-  this.schema = {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "url": "http://www.gulnarmammadova.com",
-    "logo": "http://www.gulnarmammadova.com/assets/logoGM4.png"
-  }
+  // this.schema = {
+  //   "@context": "https://schema.org",
+  //   "@type": "Organization",
+  //   "url": "http://www.gulnarmammadova.com",
+  //   "logo": "http://www.gulnarmammadova.com/assets/logoGM4.png"
+  // }
 
   }
 
