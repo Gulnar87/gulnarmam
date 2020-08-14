@@ -33,7 +33,7 @@ import { NgxJsonLdModule } from '@ngx-lite/json-ld';
     HttpClientModule,
     BrowserAnimationsModule,
     CoreModule,
-    NgxJsonLdModule,
+    NgxJsonLdModule
     // FacebookModule.forRoot(),
   
   ],

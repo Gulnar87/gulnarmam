@@ -33,19 +33,6 @@ export class ProjectItemDetailedComponent implements OnInit {
         }
       );
 
-      // this.metaTagService.setTitle("Gulnar\'s portfolio | " + this.project.name)
-      // this.metaTagService.setSocialMediaTags(
-      //   'http://gulnarmammadova.com' + 'work' + this.id, 
-      //   this.project.name,
-      //   this.project.description,
-      //   this.project.picHome
-      //   );
-
-      // this.metaService.updateTag({ property: siteTag.name, content: siteTag.value });
-
-
-      // if (data.ogTitle) {
-
         this.titleService.setTitle("Gulnar\'s portfolio | " + this.project.name);
 
         if (this.project.description) {
@@ -53,18 +40,6 @@ export class ProjectItemDetailedComponent implements OnInit {
         } else {
           this.metaService.removeTag("name='description'")
         }
-
-        // if (data.robots) {
-        //   this.metaService.updateTag({ name: 'robots', content: data.robots })
-        // } else {
-        //   this.metaService.updateTag({ name: 'robots', content: "follow,index" })
-        // }
-
-        // if (data.ogUrl) {
-        //   this.metaService.updateTag({ property: 'og:url', content: data.ogUrl })
-        // } else {
-        //   this.metaService.updateTag({ property: 'og:url', content: this.router.url })
-        // }
 
         if (this.project.name) {
           this.metaService.updateTag({ property: 'og:title', content: "Gulnar\'s portfolio | "  + this.project.name })
@@ -84,33 +59,75 @@ export class ProjectItemDetailedComponent implements OnInit {
           this.metaService.removeTag("property='og:image'")
         }
 
-     this.schema = {
-          "@context": "https://schema.org",
-          "@type": "NewsArticle",
-          "mainEntityOfPage": {
-            "@type": "WebPage",
-            "@id": "http://www.gulnarmammadova.com/work/" + this.id
-          },
-          "headline": this.project.name,
-          "image": [
-            this.project.pictures[0].pic,
-            this.project.pictures[1].pic
-           ],
-          "datePublished": "2020-02-05T09:20:00+08:00",
-          "dateModified":  "2020-02-05T09:20:00+08:00",
-          "author": {
-            "@type": "Person",
-            "name": "Gulnar Mammadova"
-          },
-           "publisher": {
-            "@type": "Organization",
-            "name": "Gulnar Mammadova",
-            "logo": {
-              "@type": "ImageObject",
-              "url": "http://www.gulnarmammadova.com/assets/logoGM4.png"
-            }
-          }
-        };
+    //  this.schema = {
+    //       "@context": "https://schema.org",
+    //       "@type": "NewsArticle",
+    //       "mainEntityOfPage": {
+    //         "@type": "WebPage",
+    //         "@id": "http://www.gulnarmammadova.com/work/" + this.id
+    //       },
+    //       "headline": this.project.name,
+    //       "image": [
+    //         this.project.pictures[0].pic,
+    //         this.project.pictures[1].pic
+    //        ],
+    //       "datePublished": "2020-02-05T09:20:00+08:00",
+    //       "dateModified":  "2020-02-05T09:20:00+08:00",
+    //       "author": {
+    //         "@type": "Person",
+    //         "name": "Gulnar Mammadova"
+    //       },
+    //        "publisher": {
+    //         "@type": "Organization",
+    //         "name": "Gulnar Mammadova",
+    //         "logo": {
+    //           "@type": "ImageObject",
+    //           "url": "http://www.gulnarmammadova.com/assets/logoGM4.png"
+    //         }
+    //       }
+    //     };
+
+    this.schema = {
+      "@context" : "https://schema.org/",
+      "@type" : "JobPosting",
+      "title" : this.project.name,
+      "description" : "<p>" + this.project.description+ "</p>",
+      "identifier": {
+        "@type": "PropertyValue", 
+        "name": "Google",
+        "value": "1234567"
+      },
+      "datePosted" : "2017-01-18",
+      "validThrough" : "2017-03-18T00:00",
+      "employmentType" : "CONTRACTOR",
+      "hiringOrganization" : {
+        "@type" : "Organization",
+        "name" : "Google",
+        "sameAs" : "http://www.google.com",
+        "logo" : this.project.picHome
+      },
+      "jobLocation": {
+      "@type": "Place",
+        "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1600 Amphitheatre Pkwy",
+        "addressLocality": ", Mountain View",
+        "addressRegion": "CA",
+        "postalCode": "94043",
+        "addressCountry": "US"
+        }
+      },
+     "baseSalary": {
+        "@type": "MonetaryAmount",
+        "currency": "USD",
+        "value": {
+          "@type": "QuantitativeValue",
+          "value": 40.00,
+          "unitText": "HOUR"
+        }
+      }
+    
+  };
   }
 
 }
