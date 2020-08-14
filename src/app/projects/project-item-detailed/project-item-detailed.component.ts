@@ -94,10 +94,10 @@ export class ProjectItemDetailedComponent implements OnInit {
           "headline": this.project.name,
           "image": [
             this.project.pictures[0],
-            this.project.pictures[1],
+            this.project.pictures[1]
            ],
-          "datePublished": new Date(),
-          "dateModified":  new Date(),
+          "datePublished": "2020-02-05T09:20:00+08:00",
+          "dateModified":  "2020-02-05T09:20:00+08:00",
           "author": {
             "@type": "Person",
             "name": "Gulnar Mammadova"
