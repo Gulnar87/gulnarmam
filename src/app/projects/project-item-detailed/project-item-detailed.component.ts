@@ -89,7 +89,7 @@ export class ProjectItemDetailedComponent implements OnInit {
           "@type": "NewsArticle",
           "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "https://google.com/article"
+            "@id": "http://www.gulnarmammadova.com/work/" + this.id
           },
           "headline": this.project.name,
           "image": [
@@ -110,7 +110,7 @@ export class ProjectItemDetailedComponent implements OnInit {
               "url": "http://www.gulnarmammadova.com/assets/logoGM4.png"
             }
           }
-        }
+        };
   }
 
 }
