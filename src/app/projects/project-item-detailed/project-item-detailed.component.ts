@@ -29,7 +29,7 @@ export class ProjectItemDetailedComponent implements OnInit {
       .subscribe(
         (params: Params) => {
           this.id = +params['id'];
-          this.project = this.projectService.getProject(this.id);
+          this.project = this.projectService.getProject(this.id); 
         }
       );
 
@@ -93,8 +93,8 @@ export class ProjectItemDetailedComponent implements OnInit {
           },
           "headline": this.project.name,
           "image": [
-            this.project.pictures[0],
-            this.project.pictures[1]
+            this.project.pictures[0].pic,
+            this.project.pictures[1].pic
            ],
           "datePublished": "2020-02-05T09:20:00+08:00",
           "dateModified":  "2020-02-05T09:20:00+08:00",
