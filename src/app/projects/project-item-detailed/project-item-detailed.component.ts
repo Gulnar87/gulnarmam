@@ -84,48 +84,33 @@ export class ProjectItemDetailedComponent implements OnInit {
           this.metaService.removeTag("property='og:image'")
         }
 
-
-        this.schema = {
-            "@context" : "https://schema.org/",
-            "@type" : "JobPosting",
-            "title" : this.project.name,
-            "description" : "<p>" + this.project.description+ "</p>",
-            "identifier": {
-              "@type": "PropertyValue", 
-              "name": "Google",
-              "value": "1234567"
-            },
-            "datePosted" : "2017-01-18",
-            "validThrough" : "2017-03-18T00:00",
-            "employmentType" : "CONTRACTOR",
-            "hiringOrganization" : {
-              "@type" : "Organization",
-              "name" : "Google",
-              "sameAs" : "http://www.google.com",
-              "logo" : this.project.picHome
-            },
-            "jobLocation": {
-            "@type": "Place",
-              "address": {
-              "@type": "PostalAddress",
-              "streetAddress": "1600 Amphitheatre Pkwy",
-              "addressLocality": ", Mountain View",
-              "addressRegion": "CA",
-              "postalCode": "94043",
-              "addressCountry": "US"
-              }
-            },
-           "baseSalary": {
-              "@type": "MonetaryAmount",
-              "currency": "USD",
-              "value": {
-                "@type": "QuantitativeValue",
-                "value": 40.00,
-                "unitText": "HOUR"
-              }
+     this.schema = {
+          "@context": "https://schema.org",
+          "@type": "NewsArticle",
+          "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://google.com/article"
+          },
+          "headline": this.project.name,
+          "image": [
+            this.project.pictures[0],
+            this.project.pictures[1],
+           ],
+          "datePublished": new Date(),
+          "dateModified":  new Date(),
+          "author": {
+            "@type": "Person",
+            "name": "Gulnar Mammadova"
+          },
+           "publisher": {
+            "@type": "Organization",
+            "name": "Gulnar Mammadova",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "http://www.gulnarmammadova.com/assets/logoGM4.png"
             }
-          
-        };
+          }
+        }
   }
 
 }

@@ -57,7 +57,8 @@ import TypeIt from 'typeit';
 })
 export class AboutComponent implements OnInit {
 
-	state = 'normal';
+  state = 'normal';
+  schema: {};
 	onAnimate(evt: MouseEvent) {
     this.state = evt.type === 'mouseenter' ? 'fly' : 'normal';
 
@@ -74,6 +75,13 @@ export class AboutComponent implements OnInit {
     waitUntilVisible: true
   }).go();
 
+
+  this.schema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "url": "http://www.gulnarmammadova.com",
+    "logo": "http://www.gulnarmammadova.com/assets/logoGM4.png"
+  }
 
   }
 
