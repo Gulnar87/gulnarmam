@@ -87,47 +87,6 @@ export class ProjectItemDetailedComponent implements OnInit {
     //       }
     //     };
 
-    this.schema = {
-      "@context" : "https://schema.org/",
-      "@type" : "JobPosting",
-      "title" : this.project.name,
-      "description" : "<p>" + this.project.description+ "</p>",
-      "identifier": {
-        "@type": "PropertyValue", 
-        "name": "Google",
-        "value": "1234567"
-      },
-      "datePosted" : "2017-01-18",
-      "validThrough" : "2017-03-18T00:00",
-      "employmentType" : "CONTRACTOR",
-      "hiringOrganization" : {
-        "@type" : "Organization",
-        "name" : "Google",
-        "sameAs" : "http://www.google.com",
-        "logo" : this.project.picHome
-      },
-      "jobLocation": {
-      "@type": "Place",
-        "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "1600 Amphitheatre Pkwy",
-        "addressLocality": ", Mountain View",
-        "addressRegion": "CA",
-        "postalCode": "94043",
-        "addressCountry": "US"
-        }
-      },
-     "baseSalary": {
-        "@type": "MonetaryAmount",
-        "currency": "USD",
-        "value": {
-          "@type": "QuantitativeValue",
-          "value": 40.00,
-          "unitText": "HOUR"
-        }
-      }
-    
-  };
   }
 
 }
