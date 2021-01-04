@@ -29,16 +29,16 @@ const routes: Routes = [
       // ogUrl: '/home'
     }
   },
-    { path: 'blog', component: BlogComponent,
-    data: {
-        title: 'Gulnar\'s portfolio | Blog',
-      // description: 'In my free time I do blogging ',
-      // ogTitle: 'Gulnar\'s portfolio | Blog',
-      // ogDescription: 'In my free time I do blogging ',
-      // ogImage: 'ImagePathForSocialMedia'
-    }
+  //   { path: 'blog', component: BlogComponent,
+  //   data: {
+  //       title: 'Gulnar\'s portfolio | Blog',
+  //     // description: 'In my free time I do blogging ',
+  //     // ogTitle: 'Gulnar\'s portfolio | Blog',
+  //     // ogDescription: 'In my free time I do blogging ',
+  //     // ogImage: 'ImagePathForSocialMedia'
+  //   }
   
-  },
+  // },
     
 ];
 
