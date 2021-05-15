@@ -1,37 +1,56 @@
 <div class="row row-photo">
-	<div class="col-xl-5 col-lg-6 col-md-5 col-sm-5 col-5 col-pic">
-		<div  [@photosAnimation]="photos.length" id="profile">
-			<div *ngFor="let photo of photos" class="profile-pic">
-				<img  [src]="photo.img" class="img-fluid" alt="Gulnar Mammadova" style="border-radius: 50%;">
-			</div>
-		</div>	
+  <div class="col-xl-5 col-lg-6 col-md-5 col-sm-5 col-5 col-pic">
+    <div [@photosAnimation]="photos.length" id="profile">
+      <div *ngFor="let photo of photos" class="profile-pic">
+        <img
+          [src]="photo.img"
+          class="img-fluid"
+          alt="Gulnar Mammadova"
+          style="border-radius: 50%"
+        />
+      </div>
+    </div>
   </div>
-	<div class="col-xl-7 col-lg-6 col-md-7 col-sm-7 col-7 ">
+  <div class="col-xl-7 col-lg-6 col-md-7 col-sm-7 col-7">
     <div class="col-home">
       <div [@textAnimation]>
-        <h1 class="text-center" id="hello">  &lt; Hello! &gt;</h1>
+        <h1 class="text-center" id="hello">&lt; Hello! &gt;</h1>
       </div>
       <div [@textAnimation1] style="color: #434343">
-        <h2 class="text-center" id="name"> I'm Gulnar!</h2>
-        <h3 class="text-center" id="profession"> Front-end web developer! </h3>
+        <h2 class="text-center" id="name">I'm Gulnar!</h2>
+        <h3 class="text-center" id="profession">Front-end web developer!</h3>
         <p class="text-center" id="bio">
-          <i class="full-text"> I develop user-friendly and dynamic Single Page Applications (SPA) using front end JavaScript framework Angular. Currently I work  as a Junior Developer for <a href="https://eonics.nl/" target="_blank">Eonics</a>, a software company in the Hague, the Netherlands. </i>  
-          <i class="short-text"> I develop user-friendly and dynamic Single Page Applications (SPA) using front end JavaScript framework Angular. </i> 
+          <i class="full-text">
+            Enthusiastic software developer with 3 years of professional
+            experience in various frontend and backend technologies. I’m able to
+            perform tasks encompassing the full software development lifecycle,
+            from analysis and design to full-stack development, testing, and
+            deployment.
+          </i>
+          <i class="short-text">
+            Enthusiastic software developer with 3 years of professional
+            experience in full-stack development.
+          </i>
         </p>
       </div>
-    </div>	
-  </div> 
-</div>
-<hr >
-<div class="row projects-row">
-  <div class="col-12 column">  
-    <h2 class="text-center overview"> My Projects </h2>
+    </div>
   </div>
-  <app-project-item-short class="col-md-6 col-12 column d-flex align-items-stretch" *ngFor="let project of projects; let i = index;" [project]="project" [index]="i">
+</div>
+<hr />
+<div class="row projects-row">
+  <div class="col-12 column">
+    <h2 class="text-center overview">My Projects</h2>
+  </div>
+  <app-project-item-short
+    class="col-md-6 col-12 column d-flex align-items-stretch"
+    *ngFor="let project of projects; let i = index"
+    [project]="project"
+    [index]="i"
+  >
   </app-project-item-short>
 </div>
 <div class="row message-row">
-  <div class="col-12 ">
-    <app-message class="text-center" > </app-message>
+  <div class="col-12">
+    <app-message class="text-center"> </app-message>
   </div>
 </div>
