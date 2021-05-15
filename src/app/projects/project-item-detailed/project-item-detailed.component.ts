@@ -1,63 +1,73 @@
-import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Params} from '@angular/router';
-import { Subscription } from 'rxjs';
-import { ProjectService } from '../../projects/project.service';
-import { Project, Pictures } from '../project.model';
-import { Meta, Title } from '@angular/platform-browser';
+import { Component, OnInit } from "@angular/core";
+import { ActivatedRoute, Params } from "@angular/router";
+import { Subscription } from "rxjs";
+import { ProjectService } from "../../projects/project.service";
+import { Project, Pictures } from "../project.model";
+import { Meta, Title } from "@angular/platform-browser";
 
 @Component({
-  selector: 'app-project-item-detailed',
-  templateUrl: './project-item-detailed.component.html',
-  styleUrls: ['./project-item-detailed.component.css'],
-
+  selector: "app-project-item-detailed",
+  templateUrl: "./project-item-detailed.component.html",
+  styleUrls: ["./project-item-detailed.component.css"],
 })
 export class ProjectItemDetailedComponent implements OnInit {
   subscription: Subscription;
-	id: number; 
-	projects: Project[] ;
+  id: number;
+  projects: Project[];
   project: Project;
-  pictures: Pictures[]
+  pictures: Pictures[];
   schema: {};
 
-   
-  constructor(private projectService: ProjectService, 
-    private route: ActivatedRoute, private metaService: Meta, private titleService: Title) { }
-
+  constructor(
+    private projectService: ProjectService,
+    private route: ActivatedRoute,
+    private metaService: Meta,
+    private titleService: Title
+  ) {}
 
   ngOnInit() {
-      this.route.params
-      .subscribe(
-        (params: Params) => {
-          this.id = +params['id'];
-          this.project = this.projectService.getProject(this.id); 
-        }
-      );
+    this.route.params.subscribe((params: Params) => {
+      this.id = +params["id"];
+      this.project = this.projectService.getProject(this.id);
+    });
 
-        this.titleService.setTitle("Gulnar\'s portfolio | " + this.project.name);
+    this.titleService.setTitle("Gulnar's portfolio | " + this.project.name);
 
-        if (this.project.description) {
-          this.metaService.updateTag({ name: 'description', content: this.project.description })
-        } else {
-          this.metaService.removeTag("name='description'")
-        }
+    if (this.project.description) {
+      this.metaService.updateTag({
+        name: "description",
+        content: this.project.description,
+      });
+    } else {
+      this.metaService.removeTag("name='description'");
+    }
 
-        if (this.project.name) {
-          this.metaService.updateTag({ property: 'og:title', content: "Gulnar\'s portfolio | "  + this.project.name })
-        } else {
-          this.metaService.removeTag("property='og:title'")
-        }
+    if (this.project.name) {
+      this.metaService.updateTag({
+        property: "og:title",
+        content: "Gulnar's portfolio | " + this.project.name,
+      });
+    } else {
+      this.metaService.removeTag("property='og:title'");
+    }
 
-        if (this.project.description) {
-          this.metaService.updateTag({ property: 'og:description', content:this.project.description })
-        } else {
-          this.metaService.removeTag("property='og:description'")
-        }
+    if (this.project.description) {
+      this.metaService.updateTag({
+        property: "og:description",
+        content: this.project.description,
+      });
+    } else {
+      this.metaService.removeTag("property='og:description'");
+    }
 
-        if (this.project.picHome) {
-          this.metaService.updateTag({ property: 'og:image', content: this.project.picHome })
-        } else {
-          this.metaService.removeTag("property='og:image'")
-        }
+    if (this.project.picHome) {
+      this.metaService.updateTag({
+        property: "og:image",
+        content: this.project.picHome,
+      });
+    } else {
+      this.metaService.removeTag("property='og:image'");
+    }
 
     //  this.schema = {
     //       "@context": "https://schema.org",
@@ -86,7 +96,5 @@ export class ProjectItemDetailedComponent implements OnInit {
     //         }
     //       }
     //     };
-
   }
-
 }

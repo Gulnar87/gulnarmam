@@ -12,6 +12,11 @@
 <div class="row text-row">
   <div class="col-12 columns">
     <p class="description">{{ project.description }}</p>
+    <ul>
+      <li class="description" *ngFor="let item of project.bulletpoints">
+        {{ item.point }}
+      </li>
+    </ul>
     <p class="description">Technology used: {{ project.techUsed }}</p>
   </div>
   <div
