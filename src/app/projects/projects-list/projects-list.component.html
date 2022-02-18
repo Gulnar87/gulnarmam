@@ -2,12 +2,7 @@
   <div class="col-xl-5 col-lg-6 col-md-5 col-sm-5 col-5 col-pic">
     <div [@photosAnimation]="photos.length" id="profile">
       <div *ngFor="let photo of photos" class="profile-pic">
-        <img
-          [src]="photo.img"
-          class="img-fluid"
-          alt="Gulnar Mammadova"
-          style="border-radius: 50%"
-        />
+        <img [src]="photo.img" class="img-fluid" alt="Gulnar Mammadova" style="border-radius: 50%" />
       </div>
     </div>
   </div>
@@ -21,14 +16,14 @@
         <h3 class="text-center" id="profession">Software developer!</h3>
         <p class="text-center" id="bio">
           <i class="full-text">
-            Enthusiastic software developer with 3 years of professional
+            Enthusiastic software developer with 4 years of professional
             experience in various frontend and backend technologies. I’m able to
             perform tasks encompassing the full software development lifecycle,
             from analysis and design to full-stack development, testing, and
             deployment.
           </i>
           <i class="short-text">
-            Enthusiastic software developer with 3 years of professional
+            Enthusiastic software developer with 4 years of professional
             experience in full-stack development.
           </i>
         </p>
@@ -41,12 +36,8 @@
   <div class="col-12 column">
     <h2 class="text-center overview">My Projects</h2>
   </div>
-  <app-project-item-short
-    class="col-md-6 col-12 column d-flex align-items-stretch"
-    *ngFor="let project of projects; let i = index"
-    [project]="project"
-    [index]="i"
-  >
+  <app-project-item-short class="col-md-6 col-12 column d-flex align-items-stretch"
+    *ngFor="let project of projects; let i = index" [project]="project" [index]="i">
   </app-project-item-short>
 </div>
 <div class="row message-row">
